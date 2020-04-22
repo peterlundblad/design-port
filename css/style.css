@@ -1,0 +1,605 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(//fonts.googleapis.com/css?family=Work+Sans:400);
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+body {
+  font-family: "Work Sans", Helvectia, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666B7A;
+  background-color: #ffffff;
+  	/* we add some padding top to create the space
+    for our fixed header to sit inside of */
+  padding-top: 104px; }
+
+.bold-body {
+  font-weight: 800;
+}
+.highlight {
+  color: #A7DAC5; }
+
+a {
+  color: #A7DAC5;
+  text-decoration: none; }
+
+header {
+  /*   overflow: hidden; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  	/* flexbox is a modern css layout mode that gives us
+    much more power over how elements are positioned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  /*box-shadow: 0 10px 20px 0 rgba(167,185,218,0.10);*/
+  	/* z-index allows us to control the order of elements stacking
+    on top of each other. it only really matters when using
+    fixed/absolute positioning because elements get taken onto 
+    separate layers */
+  z-index: 2; }
+
+header h1 {
+  /*   float: left; */
+  width: 64px; }
+
+.intro h2 {
+  font-family: "Work Sans", Helvectia, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  color: #4d4d4d; }
+
+  h3 {
+    display: inline-block;
+    font-family: "Work Sans", Helvectia, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #A7DAC5;
+    box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.35);
+    Padding: 12px;
+    margin: 100px 0 0 0;
+    }
+.intro {
+  max-width: 70%;
+  margin: 0px auto; }
+
+.nav {
+  list-style: none;
+  margin: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end; }
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em 1em .3em 1em;
+  color: #505050;
+  font-family: "Work Sans", Helvectia, Arial, sans-serif; }
+
+.selected a {
+  border-bottom: 2px solid #A7DAC5;
+  padding-bottom: 3px; }
+
+.nav a:hover {
+  border-bottom: 2px solid #505050;
+  padding-bottom: 3px; 
+  transition: .3s;  
+}
+
+.photo-group {
+  background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%); }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    opacity: 0;
+    
+    transition: opacity 0.3s;
+  }
+  
+  .photo:hover .overlay {
+    opacity: 1;
+  }
+.photo h2 {
+  position: absolute;
+  left: -35px;
+  top: -35px;
+  font-size: 25px;
+  line-height: 1.2; }
+
+.padded-multiline {
+  line-height: 2;
+  width: 350px;
+  margin: 20px auto; }
+
+.padded-multiline span {
+  background-color: #A7DAC5;
+  color: #ffffff;
+  display: inline;
+  font-size: 14px;
+  padding: 0.45rem;
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.35);
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; }
+
+.photos {
+/*   text-align: center; */
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: center;
+max-width: 960px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.photo {
+/* inline block gives us a the best of both inline and block
+elements allowing us to stack them side by side and also 
+align our elements vertically in the row*/
+display: inline-block;
+/* width:  300px; */
+margin: 10px;
+/* we can use vertical align to align or rows to bottom/middle/top   */
+/* vertical-align: top; */
+/* by using position relative on the parent photo element, our
+overlay will be positioned in relation to it */
+position: relative;
+}
+
+
+.small img {
+  width: 210px; }
+
+.large img {
+  width: 400px; }
+
+  .pieces {
+    display: relative;
+  }
+
+.photo-small img {
+  display: absolute;
+  margin-left: 42px;
+
+}
+
+.piece-intro {
+  margin: 0px 100px;
+  float: right;
+  
+    
+}
+
+footer {
+  padding: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+footer nav a {
+  width: 16px;
+  margin-left: 5px;
+  display: inline-block; }
+
+.list {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 120px; }
+
+.list a img {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  /* is this will tell the browser to ignore any default mouse 
+  interactions on this img element */
+  pointer-events: none;
+  transition: opacity 0.3s; }
+
+/* this is a pseudo element that allows us to insert content 
+before and after an element */
+.list a:after {
+  content: '/'; }
+
+/* but not the last one! */
+.list a:last-child:after {
+  content: ''; }
+
+/* .list a:hover img {
+  opacity: 1; } */
+
+.list a {
+  transition: opacity 0.3s; }
+
+.list:hover a {
+  color: #4d4d4d;
+  }
+
+.list a:hover {
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

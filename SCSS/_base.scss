@@ -1,0 +1,208 @@
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-main;
+  background-color: $color-bkgd;
+	/* we add some padding top to create the space
+  for our fixed header to sit inside of */
+  padding-top: 104px;
+}
+.highlight {
+  color: $color-main;
+}
+a {
+  color: $color-main;
+  text-decoration: none;
+}
+
+header {
+/*   overflow: hidden; */
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  padding: 20px;
+	/* flexbox is a modern css layout mode that gives us
+  much more power over how elements are positioned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-bkgd;
+  /*box-shadow: 0 10px 20px 0 rgba(167,185,218,0.10);*/
+	/* z-index allows us to control the order of elements stacking
+  on top of each other. it only really matters when using
+  fixed/absolute positioning because elements get taken onto 
+  separate layers */
+  z-index: 2;
+}
+
+header h1 {
+/*   float: left; */
+  width: 64px;
+}
+
+
+.intro h2 {
+font-family: $font-main;
+  font-size: 50px;
+  line-height: 1.5;
+text-align:  center;
+  margin-top: 150px;
+  color: $darkgrey;
+}
+
+.intro {
+max-width: 70%;
+margin: 0px auto;
+
+}
+
+
+.nav {
+  list-style: none;
+  margin: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em 1em .3em 1em;
+  color: $grey;
+  font-family: $font-main;
+}
+
+.selected a {
+  border-bottom: 2px solid $color-main;
+  padding-bottom: 3px;
+  
+}
+.nav a:hover {
+  border-bottom: 2px solid $grey;
+  padding-bottom: 3px;
+  
+}
+
+.photo-group {
+background-image: $gradient;  
+}
+
+
+
+.photo h2 {
+  position: absolute;
+  left: -35px;
+  top: -35px;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.padded-multiline { 
+  line-height: 2; 
+  width: 350px;
+  margin: 20px auto;
+}
+.padded-multiline span { 
+  background-color: $color-main;
+  color: $white; 
+  display: inline;
+  padding: 0.45rem;
+  box-shadow: 0 10px 20px 0 rgba(167,185,218,0.35);
+  
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.photos a:hover {
+box-shadow: 0 10px 20px 0 rgba(167,185,218,0.50);
+}
+.photo:hover {
+  transform:scale(1.02,1.02);
+  /* transform: translateY(-3px); */
+  -webkit-transition-duration: $trans; 
+    /* Safari */
+  transition-duration: $trans;
+}
+
+.small {
+  width: 210px;
+}
+
+.large {
+  width: 500px;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav a {
+  width: 16px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.list {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 120px;
+}
+
+.list a img {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  
+  /* is this will tell the browser to ignore any default mouse 
+  interactions on this img element */
+  pointer-events: none;
+
+  transition: $trans;
+}
+
+/* this is a pseudo element that allows us to insert content 
+before and after an element */
+.list a:after {
+  content: '/';
+}
+
+/* but not the last one! */
+.list a:last-child:after {
+  content: '';
+}
+
+.list a:hover img {
+  opacity: 1;
+}
+
+.list a {
+  transition: $trans;
+}
+
+.list:hover a {
+  color: $color-a;
+}
+
+.list a:hover {
+  color: $white;
+}
