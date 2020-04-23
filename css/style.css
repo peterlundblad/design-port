@@ -387,13 +387,23 @@ html {
 }
 
 .spotlight {
-  max-width: 960px;
-  margin: 200px auto;
+  max-width: 700px;
+  margin: 200px auto 130px auto;
+}
+
+.spotlight img {
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+  width: 100%;
+  
 }
 
 .bold {
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-family: "Roboto Mono", Courier, monospace;
+  font-weight: 400;
+  color: #729EB3;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .blurb {
@@ -411,10 +421,10 @@ html {
 h2 {
   font-size: 24px;
   font-weight: 400;
-  color: #FFFFFF;
-  display: inline;
-  background-color: #A7DAC5;
-  margin: 20px 0px 20px 0px;
+  color: #ffffff;
+  display: inline-block;
+  background-color: #5E6D7C;
+  margin: 50px 0px 6px 0px;
   padding: 6px 18px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   letter-spacing: 0.5px;
@@ -428,6 +438,23 @@ h4 {
   text-transform: uppercase;
 }
 
+.gallery-mid {
+  /* max-width: 960px; */
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.gallery-mid img {
+  width: 450px;
+  float: left;
+  margin: 10px 20px 80px 20px;
+  background-color: #666b7a;
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+}
+
 .box {
   width: 500px;
   height: 300px;
@@ -436,6 +463,31 @@ h4 {
   margin-right: 20px;
   margin-top: -20px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+}
+
+.fullbleed {
+  background: #5E6D7C;
+  padding: 100px 0;
+}
+
+.fullbleed img {
+  margin: 60px auto 80px auto;
+  display: block;
+}
+
+.text {
+  max-width: 420px;
+  display: block;
+  margin: 60px auto;
+}
+
+h5 {
+  font-family: "Roboto Mono", Courier, monospace;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .item1 {
