@@ -362,7 +362,8 @@
 html {
   font-family: "Work Sans", Helvectia, Arial, sans-serif;
   color: #666B7A;
-  background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
+  background-color: #ffffff;
+ 
 }
 
 .logo {
@@ -370,6 +371,11 @@ html {
   height: 64px;
   float: left;
   margin-left: 20px;
+  
+}
+
+.gradient {
+background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 }
 
 .hero {
@@ -440,7 +446,7 @@ h4 {
 
 .gallery-mid {
   /* max-width: 960px; */
-  margin: 10px auto;
+  /* margin: 10px auto; */
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -566,7 +572,8 @@ footer {
   margin-top: 200px;
   color: #FFFFFF;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between;
   
 }
 
@@ -575,11 +582,33 @@ footer span {
   font-weight: 500;
 }
 
-.social a {
-  width: 16px;
-  margin-left: 25px;
-    
-}
 .social {
-  float: right;
+  padding-top: 6px;
+}
+
+footer p {
+  padding-top: 2px;
+}
+
+.social a {
+padding-left: 10px;
+text-decoration: none;
+}
+
+.social img {
+  transition: transform 0.2s, filter 0.2s ease-in-out;
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+}
+
+.social img:hover {
+  filter:brightness(95%);
+  transform: scale(1.2);
+  
+  }
+
+
+.rule {
+  border: 1px solid #b1b6c7;
+  margin: 90px auto;
+  max-width: 450px;
 }
