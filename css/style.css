@@ -379,9 +379,11 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 }
 
 .hero {
-  width: 960px;
-  margin: 200px auto 40px auto;
+  width: 70%;
+  
 }
+
+
 
 .grid {
   max-width: 960px;
@@ -412,7 +414,11 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   text-transform: uppercase;
 }
 
-.blurb {
+.hero {
+  margin: 0 auto;
+}
+
+.hero h1 {
   padding: 100px 0 200px 0;
   text-align: center;
   font-weight: 300;
@@ -615,4 +621,18 @@ text-decoration: none;
   border: 1px solid #b1b6c7;
   margin: 90px auto;
   max-width: 450px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 10px 0 0 20px;
+       }
+  .nav a {
+    margin: 1em 1em .3em 0em;
+  }
+
+
 }
