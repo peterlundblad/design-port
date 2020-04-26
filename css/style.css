@@ -359,7 +359,11 @@
  
    /* Site's Styles
     ========================================================================== */
-html {
+
+* {
+  box-sizing: border-box;
+}
+    html {
   font-family: "Work Sans", Helvectia, Arial, sans-serif;
   color: #666B7A;
   background-color: #ffffff;
@@ -382,7 +386,6 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   width: 70%;
   
 }
-
 
 
 .grid {
@@ -424,6 +427,7 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   font-weight: 300;
   font-size: 42px;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -436,7 +440,7 @@ h2 {
   color: #ffffff;
   display: inline-block;
   background-color: #5E6D7C;
-  margin: 50px 0px 6px 0px;
+  margin: 40px 0px 6px 0px;
   padding: 6px 18px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   letter-spacing: 0.5px;
@@ -451,20 +455,24 @@ h4 {
 }
 
 .gallery-mid {
-  /* max-width: 960px; */
-  /* margin: 10px auto; */
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .gallery-mid img {
-  width: 450px;
+  /* width: 450px; */
   float: left;
-  margin: 10px 20px 80px 20px;
-  background-color: #666b7a;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  max-height: 340px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+}
+
+.imgCapt {
+  margin-left: 20px;
 }
 
 .box {
@@ -480,17 +488,27 @@ h4 {
 .fullbleed {
   background: #5E6D7C;
   padding: 100px 0;
+  display: flex;
+  justify-content: center;
 }
 
-.fullbleed img {
-  margin: 60px auto 80px auto;
-  display: block;
+#dropshadow {
+  box-shadow: 0 10px 20px 0 rgba(13, 21, 35, 0.3);
 }
+
+figcaption {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.figWhite {
+  color: #FFFFFF;
+  }
 
 .text {
   max-width: 420px;
   display: block;
-  margin: 60px auto;
+  margin: 40px auto;
 }
 
 h5 {
@@ -502,7 +520,7 @@ h5 {
   text-transform: uppercase;
 }
 
-.item1 {
+.items {
   overflow: hidden;
   width: 300px;
   height: 200px;
@@ -512,14 +530,14 @@ h5 {
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
 }
 
-.item1 h3 {
+.items h3 {
   opacity: 0;
   position: absolute;
    
 }
 
 
-.item1:hover h3 {
+.items:hover h3 {
   opacity: 0;
   transition: opacity 0.2s;
   font-family: 'Roboto Mono', Courier, monospace;
@@ -532,12 +550,12 @@ h5 {
   color: #666B7A;
 }
 
-.item1 img {
+.items img {
   width: 100%;
   transition:  opacity 0.3s, transform 0.3s, filter 0.5 sease-in-out;
 }
 
-.item1 img:hover {
+.items img:hover {
   opacity: .8;
   filter: blur(3px);
   transform: scale(1.03);
