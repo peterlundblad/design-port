@@ -382,6 +382,13 @@
 background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 }
 
+.gradient2 {
+  background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
+  width: 100%;  
+  display: block;
+  height: 100px;
+}
+
 .hero {
   width: 70%;
   
@@ -390,7 +397,7 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 
 .grid {
   max-width: 960px;
-  margin: 10px auto;
+  margin: 80px auto 10px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -419,6 +426,8 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 
 .hero {
   margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .hero h1 {
