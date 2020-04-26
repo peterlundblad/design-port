@@ -661,5 +661,11 @@ text-decoration: none;
     margin: 1em 1em .3em 0em;
   }
 
+  .hero {
+    padding-top: 10px;
+  }
+  .hero h1 {
+    padding: 90px 0;
+  }
 
 }
