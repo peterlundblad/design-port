@@ -389,7 +389,7 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   height: 100px;
 }
 
-.hero {
+.index-hero {
   width: 70%;
   
 }
@@ -404,12 +404,12 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   justify-content: center;
 }
 
-.spotlight {
+.hero {
   max-width: 700px;
-  margin: 200px auto 130px auto;
+  margin: 120px auto 130px auto;
 }
 
-.spotlight img {
+.hero img {
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   width: 100%;
   
@@ -424,13 +424,13 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
   text-transform: uppercase;
 }
 
-.hero {
+.index-hero {
   margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 100px;
 }
 
-.hero h1 {
+.index-hero h1 {
   padding: 100px 0 200px 0;
   text-align: center;
   font-weight: 300;
@@ -469,19 +469,20 @@ h4 {
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 100px;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .gallery-mid img {
   /* width: 450px; */
   float: left;
-  margin-right: 40px;
-  margin-bottom: 10px;
   max-height: 340px;
+  margin-bottom: 5px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
 }
 
 .imgCapt {
-  margin-left: 20px;
+  margin: 30px;
 }
 
 .box {
@@ -498,7 +499,17 @@ h4 {
   background: #5E6D7C;
   padding: 100px 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
+ 
+}
+
+.fullbleed img {
+  max-height: 700px;
+  margin: 0 20px;
+  box-shadow: 0 10px 20px 0 rgba(5,15,35,0.30);
+ 
 }
 
 #dropshadow {
@@ -507,11 +518,12 @@ h4 {
 
 figcaption {
   font-size: 12px;
-  margin-top: 5px;
+    
 }
 
 .figWhite {
   color: #FFFFFF;
+  margin-left: 20px;
   }
 
 .text {
@@ -650,6 +662,7 @@ text-decoration: none;
   max-width: 450px;
 }
 
+
 @media only screen and (max-width: 600px) {
   .logo {
     width: 48px;
@@ -661,10 +674,10 @@ text-decoration: none;
     margin: 1em 1em .3em 0em;
   }
 
-  .hero {
+  .index-hero {
     padding-top: 10px;
   }
-  .hero h1 {
+  .index-hero h1 {
     padding: 90px 0;
   }
 
