@@ -453,6 +453,8 @@ h2 {
   padding: 6px 18px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   letter-spacing: 0.5px;
+  width: 100%;
+  text-align: center;
 }
 
 h4 {
@@ -686,7 +688,6 @@ text-decoration: none;
   
     .hero h2 {
     width: 100vw;
-    text-align: center;
     margin-top: 5px;
     }
 
