@@ -674,11 +674,43 @@ text-decoration: none;
     margin: 1em 1em .3em 0em;
   }
 
-  .index-hero {
-    padding-top: 10px;
-  }
-  .index-hero h1 {
-    padding: 90px 0;
+  .hero {
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 
-}
+  .fullbleed img {
+    width: 80vw;
+      margin: 0 auto;
+  }
+  
+    .hero h2 {
+    width: 100vw;
+    text-align: center;
+    margin-top: 5px;
+    }
+
+    .hero p {
+    margin: 0 20px;
+
+    }
+
+    .text {
+    margin: 0px;
+    }
+
+    .index-hero {
+    padding-top: 10px;
+    }
+    .index-hero h1 {
+    padding: 90px 0;
+    }
+
+    .rule {
+      width: 50vw;
+    }
+    .social {
+      display: flex;
+      margin-top: 8px;
+    }
+    }
