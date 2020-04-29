@@ -376,6 +376,10 @@
  
 }
 
+#hide {
+  display: none;
+}
+
 .logo {
   width: 64px;
   height: 64px;
@@ -542,6 +546,27 @@ figcaption {
   display: block;
   margin: 40px auto;
 }
+
+p a:link {
+  color: #666B7A;
+ text-decoration: underline;
+    
+}
+
+p a:hover {
+  /* color: #729EB3; */
+  color: #86BFA8;
+  text-decoration: none;
+    }
+
+p a:visited {
+  color: #666B7A;
+}
+
+p a:visited:hover {
+  color: #86BFA8;
+}
+
 
 h5 {
   font-family: "Roboto Mono", Courier, monospace;
