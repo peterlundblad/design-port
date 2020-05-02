@@ -397,7 +397,7 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 }
 
 .index-hero {
-  width: 70%;
+  max-width: 80%;
   
 }
 
@@ -425,92 +425,119 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 
 .circ-art {
   display: flex;
-  margin-bottom: 20px;
-  opacity: 40%;
+  height: 0vh;
+  opacity: 60%;
   align-items: center;
   justify-content: center;
   animation-name: group;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform: rotate(180deg);
-  transform: translate(0px,0px);
-  
+  animation-timing-function: linear;
+  transform: translatey(-120px) rotate(0deg);
 }
 
 @keyframes group {
-  50% {
-    transform: rotate(-180deg);
-    // transform: translate(0px,10px);
-    
+  100% {
+    transform: translatey(-120px) rotate(360deg);
   }
 }
 
 .circle1 {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: #729eb357;
-  animation-name: cir1;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform: translate(0px, 0px)
-  // transform: rotate(-20deg);
-}
-
-@keyframes cir1 {
-  50% {
-    transform: translate(-30px, 70px)
-   // transform: rotate(20deg);
-      }
-  }
-
-.circle2 {
-  display: flex;
-  margin: 20px;
   width: 70px;
   height: 70px;
+  opacity: 50%;
+  transform: rotate(0deg);
   border-radius: 100%;
   background-color: #729eb382;
-  animation-name: cir2;
-  animation-duration: 3s;
+  animation-name: cir1;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform: translate(0px, 0px);
-   transform: scale(1,1);
+  animation-timing-function: linear;
+  transform-origin: center 0px;
+}
+
+/* @keyframes cir1 {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.circle2 {
+  width: 40px;
+  height: 40px;
+  transform: translate(10px, 10px) rotate(0deg);
+  border-radius: 100%;
+  background-color: #729eb357;
+  animation-name: cir2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center 0px;
 }
 
 @keyframes cir2 {
-  50% {
-    transform: translate(10px, 20px);
-    transform: scale(1.1,1.1);
-      }
-  
-    
+  100% {
+    transform: translate(10px, 10px) rotate(360deg);
   }
+}
 
 .circle3 {
-  margin: 10px;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  transform: translate(10px, -75px) rotate(0deg);
   border-radius: 100%;
   background-color: #729eb369;
   animation-name: cir3;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform: translate(0px, 0px)
-  // transform: rotate(-20deg);
+  animation-timing-function: linear;
+  transform-origin: center 15px;
 }
 
 @keyframes cir3 {
-  50% {
-    transform: translate(70px, 20px)
-   
-      }
+  100% {
+    transform: translate(10px, -75px) rotate(360deg);
   }
+}
+
+.circle4 {
+  width: 10px;
+  height: 10px;
+  transform: translate(10px, -50px) rotate(0deg);
+  border-radius: 100%;
+  background-color: #729eb369;
+  animation-name: cir4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center 10px;
+}
+
+@keyframes cir4 {
+  100% {
+    transform: translate(10px, -50px) rotate(360deg);
+  }
+}
+
+.circle5 {
+  width: 5px;
+  height: 5px;
+  transform: translate(0px, -10px) rotate(0deg);
+  border-radius: 100%;
+  background-color: #729eb369;
+  animation-name: cir5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left -20px;
+}
+
+@keyframes cir5 {
+  100% {
+    transform: translate(0px, -10px) rotate(360deg);
+  }
+}
+
 
 .bold {
   font-family: "Roboto Mono", Courier, monospace;
@@ -794,6 +821,8 @@ text-decoration: none;
     margin: 1em 0em .3em 1.5em;
   }
 
+
+  
   .hero {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -810,11 +839,7 @@ text-decoration: none;
     font-size: 20px;
     }
 
-    .hero p {
-    
-    }
-
-    .text {
+      .text {
       margin: 10px auto;
       width: 90vw;
     }
@@ -825,6 +850,7 @@ text-decoration: none;
 
     .index-hero {
     padding-top: 10px;
+    transform: translateY(100px);
     }
     .index-hero h1 {
     padding: 20px 0 10px 0;
