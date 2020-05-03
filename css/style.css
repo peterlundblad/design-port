@@ -426,7 +426,7 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 .circ-art {
   display: flex;
   height: 0vh;
-  opacity: 60%;
+  opacity: 50%;
   align-items: center;
   justify-content: center;
   animation-name: group;
@@ -555,11 +555,10 @@ background-image: linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
 }
 
 .index-hero h1 {
-  /* padding: 100px 0 200px 0; */
   text-align: center;
   font-weight: 300;
   font-size: 42px;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -633,7 +632,7 @@ h4 {
 }
 
 .fullbleed img {
-  max-height: 700px;
+  /* max-height: 700px; */
   margin: 0 20px;
   box-shadow: 0 10px 20px 0 rgba(5,15,35,0.30);
  
@@ -884,7 +883,11 @@ text-decoration: none;
     }
 
     .gradient.contact {
-      height: 80vh;
+      height: 45vh;
     }
 
+    .circ-shift {
+      transform: translateY(70px);
+    }
+    
     }
