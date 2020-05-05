@@ -1,0 +1,25 @@
+
+$white:	#ffffff;
+$teal:		#A7DAC5;
+$prime: $teal;
+$teal-trans: rgba(167, 218, 197, 0.2);
+$grey:		#5E6D7C;
+$grey-blue: #729EB3;
+$trans-blue: rgba(167,185,218,0.40);
+$trans-grey: rgba(5,15,35,0.30);
+$grey: #5E6D7C;
+$text-grey: #666B7A;
+$gradient:	linear-gradient(0deg, #D7F2FF 0%, #FFFFFF 100%);
+$font1:   'Work Sans', Helvectia, Arial, sans-serif;
+$font2: 'Roboto Mono', Courier, monospace;
+$shadow1: 0 10px 20px 0 rgba(167,185,218,0.40);
+$shadow2: 0 10px 20px 0 rgba(5,15,35,0.30);
+$duration: 10s;
+$trans: opacity 0.3s;
+
+
+  
+
+@mixin dropshadow ($color) {
+    box-shadow: 0 10px 20px 0 $color;
+   }
