@@ -456,13 +456,13 @@ body {
 
 .hero {
   max-width: 700px;
-  margin: 120px auto 70px auto;
+  margin: 120px auto 60px auto;
 }
 
 .hero img {
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.4);
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .circ-art {
@@ -638,12 +638,26 @@ h4 {
   margin: 0 auto;
 }
 
-.gallery-mid img {
-  /* width: 450px; */
+.gallery-mid2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  max-width: 990px;
+}
+
+.imgCapt img {
   float: left;
-  max-height: 340px;
+  max-width: 500px;
   margin-bottom: 5px;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+  border-radius: 5px;
+}
+
+.vert img {
+  width: 190px;
 }
 
 .imgCapt {
@@ -670,11 +684,12 @@ h4 {
 }
 
 .fullbleed img {
-  /* max-height: 700px; */
+  max-height: none;
   margin: 0 20px;
   box-shadow: 0 10px 20px 0 rgba(5, 15, 35, 0.3);
   width: 100%;
   max-width: 800px;
+  border-radius: 5px;
 }
 
 #dropshadow {
@@ -838,6 +853,10 @@ footer p {
   max-width: 450px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   .logo {
     width: 48px;
@@ -848,6 +867,14 @@ footer p {
 
   .nav a {
     margin: 1em 0em 0.3em 1.5em;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .mobile {
+    display: initial;
   }
 
   .hero {
