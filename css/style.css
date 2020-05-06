@@ -945,6 +945,10 @@ footer p {
   .circ-shift {
     transform: translateY(70px);
   }
+
+  .circ-art {
+    opacity: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
