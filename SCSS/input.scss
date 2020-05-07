@@ -72,7 +72,7 @@
   .circ-art {
     display: flex;
     height: 0vh;
-    opacity: 50%;
+    // opacity: 0.8;
     align-items: center;
     justify-content: center;
     animation-name: group;
@@ -91,10 +91,10 @@
   .circle1 {
     width: 70px;
     height: 70px;
-    opacity: 50%;
+    opacity: 0.5;
     transform: rotate(0deg);
     border-radius: 100%;
-    background-color: $grey-blue;
+    background-color: $trans-blue;
     animation-name: cir1;
     animation-duration: $duration;
     animation-iteration-count: infinite;
@@ -113,8 +113,8 @@
     height: 40px;
     transform: translate(10px, 10px) rotate(0deg);
     border-radius: 100%;
-    background-color: $grey-blue;
-    opacity: 40%;
+    background-color: $trans-blue;
+    opacity: 0.6;
     animation-name: cir2;
     animation-duration: $duration;
     animation-iteration-count: infinite;
@@ -133,8 +133,8 @@
     height: 15px;
     transform: translate(10px, -75px) rotate(0deg);
     border-radius: 100%;
-    opacity: 30%;
-    background-color: $grey-blue;
+    opacity: 0.3;
+    background-color: $trans-blue;
     animation-name: cir3;
     animation-duration: $duration;
     animation-iteration-count: infinite;
@@ -151,10 +151,10 @@
   .circle4 {
     width: 10px;
     height: 10px;
-    transform: translate(10px, -50px) rotate(0deg);
+    transform: translate(10px, -35px) rotate(0deg);
     border-radius: 100%;
-    background-color: $grey-blue;
-    opacity: 40%;
+    background-color: $trans-blue;
+    opacity: 0.6;
     animation-name: cir4;
     animation-duration: $duration;
     animation-iteration-count: infinite;
@@ -162,19 +162,19 @@
     transform-origin: center 10px;
   }
   
-  @keyframes cir4 {
-    100% {
-      transform: translate(10px, -50px) rotate(360deg);
-    }
-  }
+  // @keyframes cir4 {
+  //   100% {
+  //     transform: translate(10px, -35px) rotate(360deg);
+  //   }
+  // }
   
   .circle5 {
     width: 5px;
     height: 5px;
     transform: translate(0px, -10px) rotate(0deg);
     border-radius: 100%;
-    background-color: $grey-blue;
-    opacity: 30%;
+    background-color: $trans-blue;
+    opacity: 0.5;
     animation-name: cir5;
     animation-duration: $duration;
     animation-iteration-count: infinite;
@@ -502,7 +502,22 @@
    .mobile {
      display: initial;
    }
-    
+   
+   
+.circ-art {
+  animation-name: group;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translatey(-90px) rotate(0deg);
+}
+
+@keyframes group {
+  100% {
+    transform: translatey(-90px) rotate(360deg);
+  }
+  }
+   
     .hero {
       margin-top: 40px;
       margin-bottom: 20px;
@@ -510,7 +525,9 @@
   
     .fullbleed img {
       width: 100vw;
-        margin: 0 auto;
+      margin: 0 auto;
+      border-radius: 0px;
+
     }
     
       .hero h2 {
@@ -567,12 +584,5 @@
         height: 45vh;
       }
   
-      .circ-shift {
-        transform: translateY(70px);
-      }
-
-      .circ-art {
-        opacity: 30%;
-      }
-      
+                
       }

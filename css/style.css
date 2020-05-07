@@ -468,7 +468,6 @@ body {
 .circ-art {
   display: flex;
   height: 0vh;
-  opacity: 50%;
   align-items: center;
   justify-content: center;
   animation-name: group;
@@ -486,10 +485,10 @@ body {
 .circle1 {
   width: 70px;
   height: 70px;
-  opacity: 50%;
+  opacity: 0.5;
   transform: rotate(0deg);
   border-radius: 100%;
-  background-color: #729EB3;
+  background-color: rgba(167, 185, 218, 0.4);
   animation-name: cir1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -507,8 +506,8 @@ body {
   height: 40px;
   transform: translate(10px, 10px) rotate(0deg);
   border-radius: 100%;
-  background-color: #729EB3;
-  opacity: 40%;
+  background-color: rgba(167, 185, 218, 0.4);
+  opacity: 0.6;
   animation-name: cir2;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -526,8 +525,8 @@ body {
   height: 15px;
   transform: translate(10px, -75px) rotate(0deg);
   border-radius: 100%;
-  opacity: 30%;
-  background-color: #729EB3;
+  opacity: 0.3;
+  background-color: rgba(167, 185, 218, 0.4);
   animation-name: cir3;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -543,10 +542,10 @@ body {
 .circle4 {
   width: 10px;
   height: 10px;
-  transform: translate(10px, -50px) rotate(0deg);
+  transform: translate(10px, -35px) rotate(0deg);
   border-radius: 100%;
-  background-color: #729EB3;
-  opacity: 40%;
+  background-color: rgba(167, 185, 218, 0.4);
+  opacity: 0.6;
   animation-name: cir4;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -554,18 +553,13 @@ body {
   transform-origin: center 10px;
 }
 
-@keyframes cir4 {
-  100% {
-    transform: translate(10px, -50px) rotate(360deg);
-  }
-}
 .circle5 {
   width: 5px;
   height: 5px;
   transform: translate(0px, -10px) rotate(0deg);
   border-radius: 100%;
-  background-color: #729EB3;
-  opacity: 30%;
+  background-color: rgba(167, 185, 218, 0.4);
+  opacity: 0.5;
   animation-name: cir5;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -877,6 +871,19 @@ footer p {
     display: initial;
   }
 
+  .circ-art {
+    animation-name: group;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translatey(-90px) rotate(0deg);
+  }
+
+  @keyframes group {
+    100% {
+      transform: translatey(-90px) rotate(360deg);
+    }
+  }
   .hero {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -885,6 +892,7 @@ footer p {
   .fullbleed img {
     width: 100vw;
     margin: 0 auto;
+    border-radius: 0px;
   }
 
   .hero h2 {
@@ -940,14 +948,6 @@ footer p {
 
   .gradient.contact {
     height: 45vh;
-  }
-
-  .circ-shift {
-    transform: translateY(70px);
-  }
-
-  .circ-art {
-    opacity: 30%;
   }
 }
 
