@@ -496,12 +496,14 @@
     }
   
   .desk {
-    display: none; 
+    display: none;
+    
    }
 
    .mobile {
      display: initial;
-   }
+     width: 100vw;
+      }
    
    
 .circ-art {

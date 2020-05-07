@@ -869,6 +869,7 @@ footer p {
 
   .mobile {
     display: initial;
+    width: 100vw;
   }
 
   .circ-art {
