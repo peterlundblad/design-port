@@ -35,10 +35,10 @@
   
   .gradient {
   background-image: $gradient;
-  }
+    }
   
   .gradient.contact {
-    height: 60vh;
+    height: 50vh;
   }
   
   .index-hero {
@@ -397,7 +397,6 @@
   .items img:hover {
     opacity: .4;
     transform: scale(1.05);
-     
   } 
   
   .nav {
