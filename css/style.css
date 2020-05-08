@@ -740,7 +740,7 @@ h5 {
   height: 200px;
   text-align: center;
   margin: 10px;
-  /* background-color: $prime; */
+  background-color: #A7DAC5;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   border-radius: 5px;
 }
@@ -760,18 +760,17 @@ h5 {
   text-transform: uppercase;
   font-size: 16px;
   margin: 100px 20px;
-  color: #666B7A;
+  color: #ffffff;
 }
 
 .items img {
   width: 100%;
-  transition: opacity 0.3s, transform 0.3s, filter 0.5 sease-in-out;
+  transition: opacity 0.8s, transform 0.4s ease-in-out;
 }
 
 .items img:hover {
-  opacity: 0.8;
-  filter: blur(3px);
-  transform: scale(1.03);
+  opacity: 0.4;
+  transform: scale(1.05);
 }
 
 .nav {
@@ -908,7 +907,7 @@ footer p {
   }
 
   .imgCapt {
-    margin: 30px 30px;
+    margin: 12px 25px;
   }
 
   .index-hero {
@@ -949,6 +948,10 @@ footer p {
 
   .gradient.contact {
     height: 45vh;
+  }
+
+  .vert img {
+    width: 33vw;
   }
 }
 
