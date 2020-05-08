@@ -1,0 +1,23 @@
+{
+  "name": "pcl-portfolio",
+  "version": "1.0.0",
+  "description": "peter's design portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlundblad/design-port.git"
+  },
+  "keywords": [
+    "design",
+    "portfolio"
+  ],
+  "author": "Peter Lundblad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlundblad/design-port/issues"
+  },
+  "homepage": "https://github.com/peterlundblad/design-port#readme"
+}
