@@ -770,7 +770,6 @@ h5 {
 
 .items img:hover {
   opacity: 0.8;
-  filter: blur(3px);
   transform: scale(1.03);
 }
 
