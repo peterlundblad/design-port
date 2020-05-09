@@ -49,7 +49,7 @@
   
   .grid {
     max-width: 960px;
-    margin: 30px auto 10px auto;
+    margin: 30px auto 100px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -426,11 +426,21 @@
     transition: .3s;
   }
   
+.cta-sect {
+  width: 100%;
+  background-image: $gradient2;
+  height: 160px;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+
   footer {
     padding: 15px 20px 20px 20px;
     font-size: 12px;
     background-image: linear-gradient(225deg, #A0A9B2 0%, $grey 100%);
-    margin-top: 100px;
     color: $white;
     display: flex;
     flex-direction: row;
