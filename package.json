@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/peterlundblad/design-port/issues"
   },
-  "homepage": "https://github.com/peterlundblad/design-port#readme"
+  "homepage": "https://github.com/peterlundblad/design-port#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
