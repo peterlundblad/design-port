@@ -427,8 +427,8 @@ body {
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 4em;
+  height: 4em;
   float: left;
   margin-left: 20px;
 }
@@ -861,8 +861,8 @@ footer p {
 
 @media only screen and (max-width: 700px) {
   .logo {
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 3em;
     float: left;
     /* margin: 10px 0 0 20px; */
   }
@@ -878,6 +878,18 @@ footer p {
   .mobile {
     display: initial;
     width: 100vw;
+  }
+
+  .hero h2 {
+    background-color: initial;
+    border-radius: initial;
+    box-shadow: initial;
+    text-align: left;
+    border-bottom: 2px solid #729EB3;
+    color: #666B7A;
+    margin-top: 10px;
+    padding: 0px;
+    font-size: 20px;
   }
 
   .circ-art {
@@ -902,12 +914,6 @@ footer p {
     width: 100vw;
     margin: 0 auto;
     border-radius: 0px;
-  }
-
-  .hero h2 {
-    margin-top: 4px;
-    padding: 13px 0;
-    font-size: 20px;
   }
 
   .text {
@@ -953,6 +959,10 @@ footer p {
   .social {
     display: flex;
     margin-top: 8px;
+  }
+
+  .social a {
+    padding-left: 1em;
   }
 
   .gradient.contact {
