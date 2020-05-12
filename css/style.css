@@ -805,25 +805,134 @@ h5 {
   width: 100%;
   background-image: linear-gradient(54deg, #D7F2FF 0%, #FFFFFF 100%);
   height: 12rem;
+  overflow: hidden;
+  margin: 0 17% 0 auto;
 }
 
 .cta-text {
+  position: relative;
+  z-index: 1;
   max-width: 500px;
   width: 50vw;
   display: block;
   margin: 40px auto 40px 60%;
 }
 
-.cta h3 {
-  background-color: initial;
-  box-shadow: initial;
+.cta h6 {
+  font-size: 1.5em;
   color: #666B7A;
-  font-weight: 400;
-  margin: 0;
-  padding-top: 2.3rem;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  margin: 1rem 0 0.5rem 0;
 }
 
+.group2 {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  animation-name: group2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translate(-40px, 80px) rotate(0deg);
+}
+
+@keyframes group2 {
+  100% {
+    transform: translate(-40px, 80px) rotate(360deg);
+  }
+}
+.dot1 {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  border-radius: 2rem;
+  background-color: lightblue;
+  animation-name: dot1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translatex(-50px);
+}
+
+@keyframes dot1 {
+  50% {
+    transform: translatex(50px);
+  }
+}
+.dot2 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3rem;
+  opacity: 0.7;
+  background-color: lightblue;
+  animation-name: dot2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translatey(-40px);
+}
+
+@keyframes dot2 {
+  50% {
+    transform: translatey(40px);
+  }
+}
+.dot3 {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 3rem;
+  opacity: 0.8;
+  background-color: lightblue;
+  animation-name: dot3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translatex(-80px);
+}
+
+@keyframes dot3 {
+  50% {
+    transform: translatex(80px);
+  }
+}
+.dot4 {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 3rem;
+  opacity: 0.8;
+  background-color: lightblue;
+  animation-name: dot4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(-60px, 50px);
+}
+
+@keyframes dot4 {
+  50% {
+    transform: translate(60px, -50px);
+  }
+}
+.dot5 {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 3rem;
+  opacity: 0.8;
+  background-color: lightblue;
+  animation-name: dot5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(-70px, 80px);
+}
+
+@keyframes dot5 {
+  50% {
+    transform: translate(70px, -80px);
+  }
+}
 .button {
   background-image: linear-gradient(16deg, #5BA6CB 0%, #88D8B7 100%);
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.4);
@@ -833,14 +942,15 @@ h5 {
   font-size: 0.9em;
   letter-spacing: 1px;
   color: #ffffff;
-  padding: 12px 32px 12px 32px;
+  padding: 1rem 2em;
   border-radius: 12px;
   text-align: center;
   display: inline-block;
   transition-duration: 0.3s;
   margin: 0 auto;
   width: 30%;
-  max-width: 300px;
+  max-width: 18em;
+  min-width: 13em;
 }
 
 .button:hover {
@@ -900,6 +1010,11 @@ footer p {
   display: none;
 }
 
+@media only screen and (max-width: 960px) {
+  .cta-text {
+    margin: 40px auto 40px 50%;
+  }
+}
 @media only screen and (max-width: 700px) {
   .logo {
     width: 3em;
@@ -1011,6 +1126,24 @@ footer p {
 
   .vert img {
     width: 33vw;
+  }
+
+  .cta-text {
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .cta-text h6 {
+    font-size: 1.3rem;
+  }
+
+  .group2 {
+    transform: translate(-40px, 80px) rotate(0deg);
+  }
+
+  .button {
+    width: 50vw;
+    min-width: 10em;
   }
 }
 
