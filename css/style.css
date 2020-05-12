@@ -415,6 +415,7 @@ th {
 
 html {
   font-family: "Work Sans", Helvectia, Arial, sans-serif;
+  font-size: 100%;
   background-color: #ffffff;
 }
 
@@ -800,14 +801,54 @@ h5 {
   transition: 0.3s;
 }
 
-.cta-sect {
+.cta {
   width: 100%;
-  background-image: linear-gradient(47deg, #C2DAE6 0%, #729EB3 100%);
-  height: 160px;
+  background-image: linear-gradient(54deg, #D7F2FF 0%, #FFFFFF 100%);
+  height: 12rem;
+}
+
+.cta-text {
+  max-width: 500px;
+  width: 50vw;
+  display: block;
+  margin: 40px auto 40px 60%;
+}
+
+.cta h3 {
+  background-color: initial;
+  box-shadow: initial;
+  color: #666B7A;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  background-image: linear-gradient(16deg, #5BA6CB 0%, #88D8B7 100%);
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.4);
+  font-family: "Work Sans", Helvectia, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  letter-spacing: 1px;
   color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 12px 32px 12px 32px;
+  border-radius: 12px;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.3s;
+  margin: 0 auto;
+  width: 30%;
+  max-width: 300px;
+}
+
+.button:hover {
+  transform: scale(1.07, 1.07);
+}
+
+.button:active {
+  box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -889,7 +930,6 @@ footer p {
     color: #666B7A;
     margin-top: 10px;
     padding: 0px;
-    font-size: 20px;
   }
 
   .circ-art {
