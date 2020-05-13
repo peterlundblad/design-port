@@ -846,7 +846,7 @@ h5 {
 .dot1 {
   width: 3rem;
   height: 3rem;
-  opacity: 0.3;
+  opacity: 0.2;
   border-radius: 2rem;
   background-color: lightblue;
   animation-name: dot1;
@@ -865,7 +865,7 @@ h5 {
   width: 1rem;
   height: 1rem;
   border-radius: 3rem;
-  opacity: 0.3;
+  opacity: 0.2;
   background-color: lightblue;
   animation-name: dot2;
   animation-duration: 10s;
@@ -883,7 +883,7 @@ h5 {
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 3rem;
-  opacity: 0.5;
+  opacity: 0.3;
   background-color: lightblue;
   animation-name: dot3;
   animation-duration: 10s;
@@ -901,7 +901,7 @@ h5 {
   width: 0.3rem;
   height: 0.3rem;
   border-radius: 3rem;
-  opacity: 0.5;
+  opacity: 0.3;
   background-color: lightblue;
   animation-name: dot4;
   animation-duration: 10s;
@@ -919,7 +919,7 @@ h5 {
   width: 0.3rem;
   height: 0.3rem;
   border-radius: 3rem;
-  opacity: 0.5;
+  opacity: 0.3;
   background-color: lightblue;
   animation-name: dot5;
   animation-duration: 10s;
@@ -1140,11 +1140,7 @@ footer p {
   }
 
   .cta-text h6 {
-    font-size: 1.3rem;
-  }
-
-  .group2 {
-    transform: translate(-40px, 80px) rotate(0deg);
+    font-size: 1.5rem;
   }
 
   .button {
