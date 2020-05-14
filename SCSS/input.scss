@@ -296,27 +296,11 @@
    
   }
 
-  .fullbleed2 {
+  #fullbleed2 {
     background-image: $gradient3;
-    padding: 100px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-      
   }
     
   .fullbleed img {
-    max-height: none;
-    margin: 0 20px;
-    box-shadow: $shadow2;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 5px;
-   
-  }
-  
-  .fullbleed2 img {
     max-height: none;
     margin: 0 20px;
     box-shadow: $shadow2;
