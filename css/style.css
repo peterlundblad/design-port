@@ -626,7 +626,7 @@ h4 {
 .gallery-mid {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding-bottom: 100px;
   max-width: 1180px;
