@@ -39,7 +39,7 @@
     }
   
   .gradient.contact {
-    height: 50vh;
+    height: 55vh;
   }
   
   .index-hero {
@@ -891,9 +891,9 @@ box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.30);
         padding: initial;
       }
 
-      .gradient.contact {
-        height: 45vh;
-      }
+      // .gradient.contact {
+      //   height: 45vh;
+      // }
  
       
 
@@ -955,4 +955,20 @@ box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.30);
 
 }
 
-       
+@media only screen and (max-width: 320px) {
+
+body {
+  font-size: .9rem;
+}
+
+.bold {
+  font-size: .7rem;
+  font-weight: 500;
+}
+
+.items {
+  width: 130px;
+  height: 86px;
+}
+
+}       
