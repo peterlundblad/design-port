@@ -1092,7 +1092,7 @@ label {
 
 .rule {
   display: none;
-  border: 1px solid #5E6D7C;
+  border: 1px solid #ffffff;
   margin: 90px auto;
   max-width: 450px;
 }
@@ -1233,7 +1233,7 @@ label {
 
   .rule {
     width: 50vw;
-    margin: 70px auto;
+    margin: 2rem auto;
   }
 
   .ext-links {
@@ -1242,7 +1242,7 @@ label {
   }
 
   .ext-links a {
-    padding-left: 1em;
+    padding: initial;
   }
 
   .gradient.contact {
@@ -1262,6 +1262,43 @@ label {
   .button {
     width: 50vw;
     min-width: 10em;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  .social img {
+    width: 2.5rem;
+    margin: 0 1rem;
+  }
+
+  .email-list {
+    margin: 3.75rem auto 2rem auto;
+  }
+
+  .ext-links {
+    transform: translateX(0%);
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 8px;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+  }
+
+  .footer-nav {
+    margin: 1rem auto 2.3rem auto;
+    text-align: center;
+    color: #ffffff;
+    border: initial;
+    padding: 0;
+    width: 50vw;
+  }
+
+  #copyright {
+    margin: 0rem auto 0 auto;
   }
 }
 
