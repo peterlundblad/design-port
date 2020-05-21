@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps')
 var postcss = require("gulp-postcss")
 var autoprefixer = require("autoprefixer")
 var browserSync = require('browser-sync').create()
+var rename = require('gulp-rename')
 
 	
 // Put this after including our dependencies
@@ -30,7 +31,7 @@ function style() {
     // (If you want to use scss files, simply look for *.scss files instead)
     return (
         gulp
-            .src("SCSS/*.scss")
+            .src("SCSS/input.scss")
             .pipe(sourcemaps.init())
             // Use sass with the files found, and log any errors
             .pipe(sass())
@@ -38,10 +39,11 @@ function style() {
             .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(postcss([autoprefixer()]))
             .pipe(sourcemaps.write('.'))
-             // What is the destination for the compiled file?
+            .pipe(rename("style.css"))
+            // What is the destination for the compiled file?
             .pipe(gulp.dest(paths.styles.dest))
             .pipe(browserSync.stream())
-            .pipe(browserSync.reload())
+            // .pipe(browserSync.reload())
             
     );
 }
@@ -59,10 +61,10 @@ function watch() {
             baseDir: "./"
         }
     });
-    
+    style();
     // gulp.watch takes in the location of the files to watch for changes
     // and the name of the function we want to run on change
-    gulp.watch(paths.styles.src, style);
+    gulp.watch(paths.styles.src, style, reload);
     gulp.watch("*.html", reload);
     }
     
