@@ -18,6 +18,11 @@
 [build.processing.images]
   compress = true
 
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+    buildDir = "public"
+  
   # Skip all post processing in deploy previews,
 # ignoring any other settings
 [context.deploy-preview.processing]
