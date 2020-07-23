@@ -373,6 +373,8 @@
     border-radius: 5px;
   }
  
+
+
   .items h3 {
     opacity: 0;
     position: absolute;
@@ -386,11 +388,14 @@
     margin: 5.5rem 0;
     color: $white; 
     width: 300px;
+      /* removes the hover bug that prevent img hover state from triggering */
+    pointer-events: none;
   }
   
-  
+ 
   .items:hover h3 {
     opacity: 1;
+    
     
   }
   
