@@ -281,7 +281,14 @@ header {
     box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
     border-radius: 5px;
      }
-     
+  
+  .height600 img {
+       height: 600px;
+     }
+
+    .height300 img {
+    height: 300px;
+  }
 
   .vert img {
       width: 190px;
