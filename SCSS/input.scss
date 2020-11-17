@@ -1044,9 +1044,10 @@ box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.30);
 #copyright {
   margin: 0rem auto 0 auto;
 }
-
+.emailWidth img {
+  width: 375px;
 }
-
+}
 @media only screen and (max-width: 320px) {
 
 body {
@@ -1062,5 +1063,7 @@ body {
   width: 130px;
   height: 86px;
 }
-
+.emailWidth img {
+  width: 375px;
+}
 }       
