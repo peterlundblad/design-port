@@ -498,7 +498,7 @@ h4 {
 }
 .fullbleed img {
   max-height: none;
-  margin: 20px 20px 3px 20px;
+  margin: 20px 20px 8px 20px;
   box-shadow: 0 10px 20px 0 rgba(5, 15, 35, 0.3);
   width: 100%;
   max-width: 800px;
