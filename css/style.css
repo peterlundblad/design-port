@@ -400,7 +400,7 @@ body {
   text-align: center;
   font-weight: 300;
   font-size: 42px;
-  max-width: 850px;
+  max-width: 680px;
   margin: 0 auto;
 }
 .highlight {
@@ -522,10 +522,10 @@ h4 {
 }
 .fullbleed img {
   max-height: none;
-  margin: 20px 20px 8px 20px;
+  margin: 70px 20px 8px 20px;
   box-shadow: 0 10px 20px 0 rgba(5, 15, 35, 0.3);
   width: 100%;
-  max-width: 800px;
+  max-width: 950px;
   border-radius: 5px;
 }
 #dropshadow {
@@ -579,9 +579,9 @@ h5 {
 .items h3 {
   opacity: 0;
   position: absolute;
-  transition: opacity 0.8s;
+  transition: opacity 0.6s;
   font-family: "Roboto Mono", Courier, monospace;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -590,6 +590,7 @@ h5 {
   color: #fff;
   width: 300px;
   pointer-events: none;
+  
 }
 .items:hover h3 {
   opacity: 1;
