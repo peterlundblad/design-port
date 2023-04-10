@@ -999,6 +999,10 @@ label {
     font-size: 0.7rem;
   }
 
+  .figWhite {
+    color: #fff;
+    margin-left: 0px;
+
   .group2 {
     transform: translate(-40px, 30px) rotate(0);
   }
