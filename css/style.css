@@ -1001,8 +1001,8 @@ label {
 
   .figWhite {
     color: #fff;
-    margin-left: 0px;
-
+    margin: 0px 0px 45px 0px;
+  }
   .group2 {
     transform: translate(-40px, 30px) rotate(0);
   }
@@ -1030,6 +1030,10 @@ label {
   #copyright {
     margin: 3rem auto 0 auto;
     text-align: center;
+  }
+
+  .fullbleed {
+    padding: 60px 0 0 0;
   }
   .email-list {
     margin: 3.75rem auto;
@@ -1068,6 +1072,7 @@ label {
     color: #666b7a;
     margin-top: 10px;
     padding: 0;
+    font-weight: 400;
   }
   .circ-art {
     -webkit-animation-name: group;
