@@ -570,6 +570,17 @@ h5 {
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
+/* .items {
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  background-color: #729eb3;
+  box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
+  border-radius: 5px;
+} */
+
 .items {
   overflow: hidden;
   width: 300px;
@@ -579,7 +590,51 @@ h5 {
   background-color: #729eb3;
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.3);
   border-radius: 5px;
+  display: none; /* Hidden by default for the nav filter script to work */
 }
+
+/* this gets added to via js */
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2.5em 1em 0.3em 1em;
+  color: #5e6d7c;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 0em 1em 0.3em 1em;
+  color: #5e6d7c;
+  font-family: "Work Sans", Helvectia, Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 7px 20px 0 rgba(167, 185, 218, 0.4);
+  
+}
+
+.btn:hover {
+  background-color: #b1c8d4;
+}
+
+/* this is only for nav filters buttons */
+.active {
+  background-color: #d3e2e9;
+
+}
+
+
 .items h3 {
   opacity: 0;
   position: absolute;
@@ -982,6 +1037,11 @@ label {
   vertical-align: middle;
 }
 @media only screen and (max-width: 960px) {
+  
+.btn {
+margin: 0em 1em 2em 1em;
+}
+
   .cta-text {
     text-align: center;
     margin: 30px auto;

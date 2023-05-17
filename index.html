@@ -53,52 +53,63 @@
 			<h4 class="bold">He is based in San Francisco and is available for freelance projects.</h4>
 		</section>
 </div>
+
+<section id="myBtnContainer">
+	<button class="btn active" onclick="filterSelection('all')">All</button>
+	<button class="btn" onclick="filterSelection('brand')">Brand Identity</button>
+	<!-- <button class="btn" onclick="filterSelection('web')">Web</button> -->
+	<button class="btn" onclick="filterSelection('email')">Email</button>
+	<button class="btn" onclick="filterSelection('motion')">Motion</button>
+	<button class="btn" onclick="filterSelection('type')">Type</button>
+	<button class="btn" onclick="filterSelection('print')">Print</button>
+</section>
+
 <section class="grid">
-	
-	<a id="" class="items" href="cin7.html">
+
+	<a id="" class="items motion brand" href="cin7.html">
 		<h3>Cin7</h3> <img src="img/cin7-story-thumb.jpg">
 	</a>
 
-	<a id="" class="items" href="wedding-invites.html">
+	<a id="" class="items type print" href="wedding-invites.html">
 		<h3>Wedding Invites</h3> <img src="img/wedding-thumb.jpg">
 	</a>
 	
-	<a id="" class="items" href="aldino.html">
+	<a id="" class="items type" href="aldino.html">
 		<h3>Aldino Typeface</h3> <img src="img/thumb-aldino.png">
 	</a>
 
-	<a id="" class="items" href	="dorm.html">
+	<a id="" class="items brand email" href	="dorm.html">
 		<h3>Pottery Barn Emails</h3> <img src="img/thumb-dorm.jpg">
 	</a>
 
-	<a id="" class="items" href="corpen.html">
+	<a id="" class="items brand print" href="corpen.html">
 		<h3>Corpen Rebrand</h3> <img src="img/thumb-corpen.jpg">
 	</a>
 
-	<a id="" class="items" href="niaw.html">
+	<a id="" class="items brand email" href="niaw.html">
 		<h3>NIAW Campaign</h3> <img src="img/thumb-niaw.jpg">
 	</a>
 
-	<a id="" class="items" href="harrypotter.html">
+	<a id="" class="items email" href="harrypotter.html">
 		<h3>Harry Potter</h3> <img src="img/hp-thumb.jpg">
 	</a>
 
-	<a id="" class="items" href="OT-app.html">
+	<a id="" class="items motion" href="OT-app.html">
 		<h3>OpenTable Motion Ads</h3> <img src="img/thumb-ot-app.jpg">
 	</a>
-	<a id="" class="items" href="cstl-ppl.html">
+	<a id="" class="items print" href="cstl-ppl.html">
 		<h3>Castlight Testimonial</h3> <img src="img/thumb-testimonial400x300.jpg">
 	</a>
 	
-	<a id="" class="items" href="combinati.html">
+	<a id="" class="items brand" href="combinati.html">
 		<h3>Combinati Site Design</h3> <img src="img/combinati-thumb.jpg">
 	</a>
 
-	<a id="" class="items" href="OT-pizza.html">
+	<a id="" class="items motion" href="OT-pizza.html">
 		<h3>OpenTable Pizza Story</h3> <img src="img/thumb-ot-pizza.jpg">
 	</a>
 
-	<a id="" class="items" href="natera-cbr.html">
+	<a id="" class="items email" href="natera-cbr.html">
 		<h3>Drip Emails</h3> <img src="img/thumb-nat.jpg">
 	</a>   
 
@@ -152,5 +163,52 @@
 			document.write(new Date().getFullYear());
 		  </script> PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
 		</footer>
+
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("items");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+			
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+			
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+			
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+			</script>
+			
+
 	</body>
 </html>
