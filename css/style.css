@@ -462,6 +462,12 @@ h4 {
   border-radius: 5px;
 }
 
+.big img {
+  max-width: 950px;
+  
+}
+
+
 #portrait {
   max-height: 305px;
 }
@@ -1005,6 +1011,10 @@ label {
 }
 .gumroad-button {
   display: none;
+}
+
+.gumroad .cart-button {
+  display: none !important;
 }
 .cards {
   float: left;
