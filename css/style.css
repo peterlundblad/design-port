@@ -774,7 +774,7 @@ height: 2.5rem;
   font-size: 1.3em;
   color: #fff;
   font-weight: 500;
-  margin: 2rem auto;
+  margin: 2rem auto 1.7rem auto;
   text-align: center;
 }
 
@@ -1118,10 +1118,16 @@ label {
 }
 @media only screen and (max-width: 960px) {
   
-.btn {
-display: none;  
-margin: 0em 1em 2em 1em;
-}
+
+  .brandLogos img {
+  margin: 2rem 6rem 3rem 6rem;
+  }
+      
+
+  .btn {
+  display: none;  
+  margin: 0em 1em 2em 1em;
+  }
 
   .cta-text {
     text-align: center;
@@ -1356,6 +1362,14 @@ margin: 0em 1em 2em 1em;
     width: 375px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .brandLogos img {
+  margin: 2rem 6rem 3rem 6rem;
+  }
+  
+}
+
 @media only screen and (max-width: 320px) {
   body {
     font-size: 0.9rem;
