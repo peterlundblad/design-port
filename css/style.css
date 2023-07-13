@@ -742,6 +742,47 @@ pointer-events: none;
   font-weight: 300;
   margin: 1rem 0 0.7rem 0;
 }
+
+.brands {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 17% 0 auto;
+  background-image: linear-gradient(0deg, #A9D5E0 0%, #729EB3 91%);  
+
+}
+
+.brandLogos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.brandLogos img {
+margin: auto 3rem 3rem 3rem;
+height: 2.5rem;
+
+}
+
+#logoAdjustH {
+  height: 3rem;
+  translate: 0 0.25rem;
+}
+
+.brands h6 {
+  font-size: 1.3em;
+  color: #fff;
+  font-weight: 500;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.social img {
+  width: 2.5rem;
+  margin: 0 1rem;
+}
+
 .group2 {
   height: 20px;
   display: flex;
