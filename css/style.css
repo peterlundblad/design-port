@@ -1118,11 +1118,18 @@ label {
 }
 @media only screen and (max-width: 960px) {
   
+  #logoAdjustH {
+    height: 4rem;
+    translate: 0 0.7rem;
+  }
 
   .brandLogos img {
-  margin: 2rem 6rem 3rem 6rem;
+  margin: 2rem 3rem 3rem 3rem; 
   }
       
+  .brands {
+    padding-bottom: 1rem;
+  }
 
   .btn {
   display: none;  
@@ -1209,6 +1216,10 @@ label {
   #showing img {
     opacity: 1;
 
+  }
+
+   .brands h6 {
+    margin: 2rem auto .5rem auto;
   }
 
 }
@@ -1365,7 +1376,7 @@ label {
 
 @media only screen and (max-width: 450px) {
   .brandLogos img {
-  margin: 2rem 6rem 3rem 6rem;
+  margin: 2rem 2rem 3rem 2rem;
   }
   
 }
@@ -1383,6 +1394,15 @@ label {
     height: 86px;
   }
 
+  .brandLogos img {
+    margin: 2rem;
+    height: 1.6rem;
+    }
+
+
+    #logoAdjustH {
+      height: 3rem;
+    }
 
   .emailWidth img {
     width: 375px;
