@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="keywords" content="design, visual, graphic, front-end, designer, art, motion, illustration">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Peter Lundblad">
-		
+		<meta name="description" content="The brand design portfolio of Peter Lundblad">
+
 		<meta property="og:title" content="The Design Portfolio of PCL" />
 		<meta property="og:image" content="img/pcl-site-screenshot.jpg" />
 		<meta property="og:description" content="The brand design portfolio of PCL" />
@@ -177,9 +178,13 @@
 				</div>
 			</div>
 		</section>
-		<p id="copyright">© <script type="text/javascript">
-			document.write(new Date().getFullYear());
-		  </script> PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
+			<p id="copyright">
+				<script>
+					const currentYear = new Date().getFullYear();
+					document.getElementById("copyright").textContent = `© ${currentYear}`;
+				</script>
+				PCL. All Rights Reserved. <span>Made in SF, CA.</span>
+			</p>
 		</footer>
 
 		<script>

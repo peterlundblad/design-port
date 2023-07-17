@@ -1,10 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="generator" content="PCL">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The biography or About page for this website">
+
 		<title>About</title>
 		<link rel="stylesheet" href="css/_fonts.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -167,9 +169,13 @@
 			</div>
 		</div>
 	</section>
-	<p id="copyright">© <script type="text/javascript">
-		document.write(new Date().getFullYear());
-	  </script> PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
+	<p id="copyright">
+		<script>
+			const currentYear = new Date().getFullYear();
+			document.getElementById("copyright").textContent = `© ${currentYear}`;
+		</script>
+		PCL. All Rights Reserved. <span>Made in SF, CA.</span>
+	</p>
 	</footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="generator" content="SuperHi">
@@ -184,23 +184,27 @@
 			<div class="rule"></div>
 			<div class="social">
 			<a href="https://dribbble.com/peterlundblad" target="_blank">
-				<img src="img/icon-dribbble.svg">
+				<img src="img/icon-dribbble.svg" alt="logo for Dribbble.com">
 			</a>
 			<a href="https://www.instagram.com/pcl.design/" target="_blank">
-				<img src="img/icon-instagram.svg">
+				<img src="img/icon-instagram.svg" alt="logo for Instagram">
 			</a>
 			<a href="https://www.linkedin.com/in/peterlundblad/" target="_blank">
-				<img src="img/icon-linkedin.svg">
+				<img src="img/icon-linkedin.svg" alt="logo for Linkedin">
 			</a>
 			<a href="https://github.com/peterlundblad/" target="_blank">
-				<img src="img/icon-github1.svg">
+				<img src="img/icon-github1.svg" alt="logo for GitHub">
 				</a>
 			</div>
 		</div>
 	</section>
-	<p id="copyright">© <script type="text/javascript">
-		document.write(new Date().getFullYear());
-	  </script> PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
+	<p id="copyright">
+		<script>
+			const currentYear = new Date().getFullYear();
+			document.getElementById("copyright").textContent = `© ${currentYear}`;
+		</script>
+		PCL. All Rights Reserved. <span>Made in SF, CA.</span>
+	</p>
 	</footer>
 	</body>
 </html>
