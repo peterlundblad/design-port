@@ -56,7 +56,7 @@
 </div>
 
 <section id="myBtnContainer">
-	<button class="btn active" onclick="filterSelection('all')">All</button>
+	<button class="btn active" onclick="filterSelection('Featured')">Featured</button>
 	<button class="btn" onclick="filterSelection('brand')">Brand Marketing</button>
 	<!-- <button class="btn" onclick="filterSelection('web')">Web</button> -->
 	<button class="btn" onclick="filterSelection('email')">Email</button>
@@ -67,47 +67,47 @@
 
 <section class="grid">
 
-	<a id="" class="items brand print" href="coachbar.html">
+	<a id="" class="Featured items brand print" href="coachbar.html">
 		<h3>Coachbar</h3> <img src="img/thumbnail-coachbar-brand.jpg" alt="a blue and green wavy background with white logo on top">
 	</a>
 
-	<a id="" class="items brand email" href="banana.html">
+	<a id="" class="Featured items brand email" href="banana.html">
 		<h3>Banana Republic</h3> <img src="img/BR_thumb.webp" alt="a man in a light blue suit">
 	</a>
 
-	<a id="" class="items motion brand" href="cin7.html">
+	<a id="" class="Featured items motion brand" href="cin7.html">
 		<h3>Cin7</h3> <img src="img/cin7-story-thumb.jpg" alt="a close up of a column of a user interface">
 	</a>
 
-	<a id="" class="items type" href="aldino.html">
+	<a id="" class="Featured items type" href="aldino.html">
 		<h3>Aldino Typeface</h3> <img src="img/thumb-aldino.png" alt="a slab serif typographic headline set in white">
 	</a>
 
-	<a id="" class="items brand email" href	="dorm.html">
+	<a id="" class="Featured items brand email" href	="dorm.html">
 		<h3>Pottery Barn Emails</h3> <img src="img/thumb-dorm.jpg" alt="trendy pastel bedding in a dorm room">
 	</a>
 
-	<a id="" class="items brand print" href="corpen.html">
+	<a id="" class="Featured items brand print" href="corpen.html">
 		<h3>Corpen Rebrand</h3> <img src="img/thumb-corpen.jpg" alt="a minimalist white logo set on a teal and orange gradient">
 	</a>
 
-	<a id="" class="items brand email" href="niaw.html">
+	<a id="" class="Featured items brand email" href="niaw.html">
 		<h3>NIAW Campaign</h3> <img src="img/thumb-niaw.jpg" alt="a digital collage showing a headline and pictures of people">
 	</a>
 
-	<a id="" class="items email" href="harrypotter.html">
+	<a id="" class="Featured items email" href="harrypotter.html">
 		<h3>Harry Potter</h3> <img src="img/hp-thumb.jpg" alt="a supernova exploding behind the Harry Potter logo symbolizing a patronus charm">
 	</a>
 
-	<a id="" class="items brand" href="combinati.html">
+	<a id="" class="Featured items brand" href="combinati.html">
 		<h3>Combinati Site Design</h3> <img src="img/combinati-thumb.jpg" alt="two purple icons for the biotech company Combinati">
 	</a>
 
-	<a id="hide" class="items motion" href="OT-pizza.html">
+	<a id="" class="items motion" href="OT-pizza.html">
 		<h3>OpenTable Pizza Story</h3> <img src="img/thumb-ot-pizza.jpg" alt="an illustration of pizza">
 	</a>
 
-	<a id="" class="items show" href="ApparelMagic.html">
+	<a id="" class="Featured items show" href="ApparelMagic.html">
 		<h3>ApparelMagic</h3> <img src="img/AM_img0-thumb.jpg" alt="an app illustration">
 	</a>  
 
@@ -115,8 +115,20 @@
 		<h3>Wedding Invites</h3> <img src="img/wedding-thumb.jpg" alt="cursive monoline script that reads Peter and Hope">
 	</a>
 
-	<a id="" class="items motion" href="OT-app.html">
+	<a id="" class="Featured items motion" href="OT-app.html">
 		<h3>OpenTable Motion Ads</h3> <img src="img/thumb-ot-app.jpg" alt="an advertisment showing the logo and product design of OpenTable">
+	</a>
+
+	<a id="" class="items print" href="cstl-ppl.html">
+		<h3>Castlight Testimonial</h3> <img src="img/thumb-testimonial400x300.jpg">
+	</a>
+
+	<a id="" class="items motion" href="abst.html">
+		<h3>Abstract GIFs</h3> <img src="img/thumb-shapes2_400x300.jpg">
+	</a>
+
+	<a id="" class="Featured items type" href="3d-letters.html">
+		<h3>3D Letters</h3> <img src="img/3D-f.webp" alt="a 3D rendering of the letter D">
 	</a>
 
 	
@@ -189,49 +201,71 @@
 		</footer>
 
 		<script>
-			filterSelection("all")
+			// Call filterSelection with "Featured" as the default category
+			filterSelection("Featured")
+		  
+			// Function to filter items based on category
 			function filterSelection(c) {
 			  var x, i;
+			  // Get all elements with the class "items"
 			  x = document.getElementsByClassName("items");
-			  if (c == "all") c = "";
+			  // Clear 'c' if "Featured" is selected to show only those items
+			  if (c == "Featured") c = "Featured";  // Default category now is "Featured"
+			  // Loop through all items to show or hide them
 			  for (i = 0; i < x.length; i++) {
+				// Remove "show" class from each item to hide it initially
 				w3RemoveClass(x[i], "show");
+				// Only add "show" if the item’s class includes the selected category
 				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
 			  }
 			}
-			
+		  
+			// Function to add one or more classes to an element
 			function w3AddClass(element, name) {
 			  var i, arr1, arr2;
+			  // Split existing classes into an array
 			  arr1 = element.className.split(" ");
+			  // Split new class names into an array
 			  arr2 = name.split(" ");
+			  // Loop through each class in arr2
 			  for (i = 0; i < arr2.length; i++) {
+				// If the element does not have this class, add it
 				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
 			  }
 			}
-			
+		  
+			// Function to remove one or more classes from an element
 			function w3RemoveClass(element, name) {
 			  var i, arr1, arr2;
+			  // Split existing classes into an array
 			  arr1 = element.className.split(" ");
+			  // Split class names to remove into an array
 			  arr2 = name.split(" ");
+			  // Loop through each class in arr2
 			  for (i = 0; i < arr2.length; i++) {
+				// While the class exists in arr1, remove it
 				while (arr1.indexOf(arr2[i]) > -1) {
 				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
 				}
 			  }
+			  // Join the remaining classes back together and assign to className
 			  element.className = arr1.join(" ");
 			}
-			
-			// Add active class to the current button (highlight it)
+		  
+			// Adding "active" class to the current button when clicked
 			var btnContainer = document.getElementById("myBtnContainer");
 			var btns = btnContainer.getElementsByClassName("btn");
 			for (var i = 0; i < btns.length; i++) {
+			  // Add a click event listener to each button
 			  btns[i].addEventListener("click", function(){
+				// Remove "active" class from the current active button
 				var current = document.getElementsByClassName("active");
 				current[0].className = current[0].className.replace(" active", "");
+				// Add "active" class to the clicked button
 				this.className += " active";
 			  });
 			}
-			</script>
+		  </script>
 			
 
 	</body>
