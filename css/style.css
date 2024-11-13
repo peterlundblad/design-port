@@ -55,8 +55,11 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  /* text-align: center; */
+  font-weight: 300;
+  font-size: 42px;
+  max-width: 710px;
+  margin: 0 auto;
 }
 mark {
   background: #ff0;
@@ -226,11 +229,9 @@ body {
 }
 
 .gradient.contact {
-  height: 55vh;
+  height: 565px;
 }
-.index-hero {
-  max-width: 80%;
-}
+
 .grid {
   max-width: 1280px;
   margin: 30px auto 100px auto;
@@ -241,8 +242,8 @@ body {
   padding-bottom: 40px;
 }
 .hero {
-  max-width: 800px;
-  margin: 120px auto 0 auto;
+  max-width: 850px;
+  margin: 170px auto 0 auto;
 }
 .hero img {
   box-shadow: 0 10px 20px 0 rgba(167, 185, 218, 0.4);
@@ -398,19 +399,21 @@ body {
   text-transform: uppercase;
 }
 .index-hero {
-  margin: 100px auto 80px auto;
-  padding-top: 150px;
-  padding-bottom: 200px;
-}
-.index-hero h1 {
+  margin: 0 auto 0 auto;
+  padding-top: 230px;
+  padding-bottom: 120px;
+  max-width: 80%;
   text-align: center;
+}
+
+.index-hero h1 {
   font-weight: 300;
   font-size: 42px;
   max-width: 710px;
   margin: 0 auto;
 }
 .highlight {
-  color: #a7dac5;
+  color: #72C0A0;
 }
 h2 {
   font-size: 24px;
@@ -631,7 +634,7 @@ h5 {
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  margin: -2.5em 1em 0.3em 1em;
+  margin: 2.5em 1em 0.3em 1em;
   color: #5e6d7c;
   justify-content: center;
 }
