@@ -11,6 +11,7 @@ cover_image: "/img/cbr-email-hero.jpg"
 cover_alt: "CBR Upsell Email hero"
 thumbnail: "/img/thumb-cbr-email.jpg"
 thumbnail_alt: "CBR email thumbnail"
+published: false
 
 brief: "Create custom illustrations for an email building awareness about the two main services of CBR."
 process: "I worked very closely with the email strategy lead to build out this email. The process included: brainstorming, sketching, illustrating, and refinement. The resulting work crafts an impactful story—it captures the blood and tissue characters teaming up to beat the cancer cell."

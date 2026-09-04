@@ -11,6 +11,7 @@ cover_image: "/img/nwc-hero-img.jpg"
 cover_alt: "NWC Display Ads hero"
 thumbnail: "/img/thumb-nwc.jpg"
 thumbnail_alt: "NWC ads thumbnail"
+published: false
 
 brief: "Northwest Cryobank needed a refreshed series of display ads that were modern and more refined from previous iterations."
 process: "I assembled a library of modern photographs that highlighted a diverse and active demographic. Worked with the copywriter to make the text short and to the point."

@@ -11,6 +11,7 @@ cover_image: "/img/nat-hero.jpg"
 cover_alt: "CBR & Natera Drip Emails hero"
 thumbnail: "/img/thumb-nat.jpg"
 thumbnail_alt: "CBR & Natera thumbnail"
+published: false
 
 brief: "Design a co-branded drip email series that educates leads, motivates them to enroll, and highlight partner discounts."
 process: "Our copywriter and I collaborated extensively with product marketing to make this campaign happen. We distilled the core value props of CBR into clean, succinct topics. I also incorporated new brand icons, illustrations, and styling."

@@ -11,6 +11,7 @@ cover_image: "/img/copia-hero.jpg"
 cover_alt: "Copia Promo Video hero"
 thumbnail: "/img/thumb-coipa-2-600x450.jpg"
 thumbnail_alt: "Copia promo video thumbnail"
+published: false
 
 brief: "Create a promo video for Copia that brings awareness to food scarcity in America."
 process: "I started with a rough outline of the main points. Then I moved into sketching a few important frames. Once the main skeleton was complete, I moved into production. I did all the animation and motion in Adobe After Effects and the audio was created in Audition."
