@@ -18,7 +18,6 @@ layout: default
       {% if page.brief %}<p><span class="bold">Creative Brief:</span> {{ page.brief }}</p>{% endif %}
       {% if page.overview %}<p><span class="bold">Project Overview:</span> {{ page.overview }}</p>{% endif %}
       {% if page.role %}<p><span class="bold">Role:</span> {{ page.role }}</p>{% endif %}
-      {% if page.year %}<p><span class="bold">Year:</span> {{ page.year }}</p>{% endif %}
       {% if page.external_url %}<p><span class="bold">Link:</span> <a href="{{ page.external_url }}" target="_blank" rel="noopener">{{ page.external_label | default: "Visit Site" }}</a></p>{% endif %}
       {% if page.process %}<p><span class="bold">Process:</span> {{ page.process }}</p>{% endif %}
 

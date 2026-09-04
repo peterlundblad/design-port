@@ -3,7 +3,7 @@ layout: project
 title: "Letter C Explore"
 subtitle: "Logo & Dimension Exploration"
 role: "Brand Designer"
-year: 2023
+year: 2025
 order: 6
 categories: ["Featured", "type", "brand"]
 cover_image: "/img/letter-C-hero2.webp"

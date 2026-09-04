@@ -3,7 +3,7 @@ layout: project
 title: "Brave Ruth"
 subtitle: "Music Video & Production"
 role: "Videographer, Foley, Production"
-year: 2018
+year: 2015
 order: 20
 categories: ["motion"]
 cover_image: "/img/brave-ruth-hero-img.jpg"

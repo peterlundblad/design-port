@@ -4,7 +4,7 @@ title: "Combinati Site Design"
 subtitle: "Biotech Web Design & Photography"
 client: "Combinati"
 role: "Web Designer & Photographer"
-year: 2021
+year: 2020
 order: 10
 categories: ["Featured", "brand"]
 cover_image: "/img/combinati-hero-img.jpg"

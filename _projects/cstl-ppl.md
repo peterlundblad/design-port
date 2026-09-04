@@ -11,6 +11,7 @@ cover_image: "/img/castlight-sect-hero@2x.jpg"
 cover_alt: "Castlight Testimonial Campaign hero"
 thumbnail: "/img/thumb-testimonial400x300.jpg"
 thumbnail_alt: "a red headline that says Real people. Real savings"
+published: false
 
 brief: "Develop a campaign targeted toward Castlight users who had been away from the application for an extended time."
 process: "We settled on a testimonial approach, pulling from success stories of real users. To visualize this, I used images of real users rather than stock photography."

@@ -11,6 +11,7 @@ cover_image: "/img/cbr-brand-hero.jpg"
 cover_alt: "CBR Brand Illustrations hero"
 thumbnail: "/img/thumb-cbr-brand.jpg"
 thumbnail_alt: "CBR Brand thumbnail"
+published: false
 
 brief: "Create brand illustrations for CBR's omnichannel marketing communications."
 process: "Working from the brief, I either pulled existing illustrations or built upon them."
