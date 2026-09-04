@@ -1,0 +1,44 @@
+# Site settings
+title: "Peter's Brand Design Portfolio"
+email: "contact@peterlundblad.com"
+description: "The brand design portfolio of Peter Lundblad, art director specializing in brand and type design."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pcl.design"
+author: "Peter Lundblad"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Collections configuration
+collections:
+  projects:
+    output: true
+    permalink: /:path/
+
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Explicitly include special files
+include:
+  - css/_fonts.css
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .DS_Store

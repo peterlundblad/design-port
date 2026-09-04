@@ -1,177 +1,48 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="generator" content="PCL">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="The biography or About page for this website">
+---
+layout: default
+title: "About Peter"
+nav: about
+---
 
-		<title>About</title>
-		<link rel="stylesheet" href="css/_fonts.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500&display=swap" rel="stylesheet">
-	
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-11R191B8ZM"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-	
-			gtag('config', 'G-11R191B8ZM');
-		</script>
-	
-	</head>
-	<body>
 <div class="gradient">
-			<header>
-			<a href="index.html">
-				<img class="logo" src="img/pcl-logo.svg">
-			</a>
-			<ul class="nav">
-				<li><a href="index.html">Work</a></li>
-				<li class="selected"><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			
-			</header>
+  {% include nav.html %}
 
-	<section class="hero">
-	<img src="img/about-pcl-1.jpg">
-	<div class="text">
-		<h1>About Peter</h1>
-		<p>Peter is a freelance art director and designer with a focus on brand, type, and motion design. He’s passionate about crafting visual content that’s not only effective and dynamic but also beautifully crafted and memorable.</p>
+  <section class="hero">
+    <img src="{{ '/img/about-pcl-1.jpg' | relative_url }}" alt="Peter Lundblad">
+    <div class="text">
+      <h1>About Peter</h1>
+      <p>Peter is a freelance art director and designer with a focus on brand, type, and motion design. He’s passionate about crafting visual content that’s not only effective and dynamic but also beautifully crafted and memorable.</p>
+      <p>With over a decade of experience, Peter has worked with major brands, including Banana Republic, Pottery Barn, Warner Brothers, and Cin7. He has also managed creative teams and overseen multiple successful campaigns, bringing a balance of strategic vision and creative expertise to each project.</p>	
+      <p>Beyond his design work, Peter is also an accomplished calligrapher, baker, and part-time punslinger. Like many designers, he has a well-documented love for coffee and La Croix.</p>
+    </div>
+  </section>
 
-		<p>With over a decade of experience, Peter has with major brands, including Banana Republic, Pottery Barn, Warner Brothers, and Cin7. He has also managed creative teams and overseen multiple successful campaigns, bringing a balance of strategic vision and creative expertise to each project.</p>	
-			
-		<p>Beyond his design work, Peter is also an accomplished calligrapher, baker, and part-time punslinger. Like many designers, he has a well-documented love for coffee and La Croix.</p>
-	</div>
-</section>
-<section class="gallery-mid">
-<div class="imgCapt">
-	<img id="portrait" src="img/about-img1.jpg">
-	<figcaption>Calligraphy</figcaption>
-</div>
-<div class="imgCapt">
-	<img src="img/about-img2.jpg">
-	<figcaption>Hanging in the studio</figcaption>
-</div>
-<div class="imgCapt">
-	<img src="img/about-img3.jpg">
-	<figcaption>Homemade bread</figcaption>
-</div>
-<div class="imgCapt">
-	<img id="portrait" src="img/about-img4.jpg">
-	<figcaption>Noodling on the piano</figcaption>
+  <section class="gallery-mid">
+    <div class="imgCapt">
+      <img id="portrait" src="{{ '/img/about-img1.jpg' | relative_url }}" alt="Calligraphy">
+      <figcaption>Calligraphy</figcaption>
+    </div>
+    <div class="imgCapt">
+      <img src="{{ '/img/about-img2.jpg' | relative_url }}" alt="Hanging in the studio">
+      <figcaption>Hanging in the studio</figcaption>
+    </div>
+    <div class="imgCapt">
+      <img src="{{ '/img/about-img3.jpg' | relative_url }}" alt="Homemade bread">
+      <figcaption>Homemade bread</figcaption>
+    </div>
+    <div class="imgCapt">
+      <img id="portrait" src="{{ '/img/about-img4.jpg' | relative_url }}" alt="Noodling on the piano">
+      <figcaption>Noodling on the piano</figcaption>
+    </div>
+  </section>
 </div>
 
-</section>
-</div>
 <section class="grid">
-
-	<a id="" class="items show" href="coachbar.html">
-		<h3>Coachbar</h3> <img src="img/thumbnail-coachbar-brand.jpg" alt="a blue and green wavy background with white logo on top">
-	</a>
-
-	<a id="" class="items show" href="banana.html">
-		<h3>Banana Republic</h3> <img src="img/BR_thumb.webp" alt="a man in a light blue suit">
-	</a>
-
-	<a id="" class="items show" href="c-explore.html">
-		<h3>Letter C Explore</h3> <img src="img/Letter-C-thumb.webp" alt="a step and repeat of a colorful logo">
-	</a>
-
-	<a id="" class="items show" href="cin7.html">
-		<h3>Cin7</h3> <img src="img/cin7-story-thumb.jpg" alt="a close up of a column of a user interface">
-	</a>
-
-	<a id="" class="items show" href="aldino.html">
-		<h3>Aldino Typeface</h3> <img src="img/thumb-aldino.png" alt="a slab serif typographic headline set in white">
-	</a>
-
-	<a id="" class="items show" href	="dorm.html">
-		<h3>Pottery Barn Emails</h3> <img src="img/thumb-dorm.jpg" alt="trendy pastel bedding in a dorm room">
-	</a>
-
-	<a id="" class="items show" href="corpen.html">
-		<h3>Corpen Rebrand</h3> <img src="img/thumb-corpen.jpg" alt="a minimalist white logo set on a teal and orange gradient">
-	</a>
-
-	<a id="" class="items show" href="harrypotter.html">
-		<h3>Harry Potter</h3> <img src="img/hp-thumb.jpg" alt="a supernova exploding behind the Harry Potter logo symbolizing a patronus charm">
-	</a>
-
-	<a id="" class="items show" href="combinati.html">
-		<h3>Combinati Site Design</h3> <img src="img/combinati-thumb.jpg" alt="two purple icons for the biotech company Combinati">
-	</a>
-
-	<a id="" class="items show" href="ApparelMagic.html">
-		<h3>ApparelMagic</h3> <img src="img/AM_img0-thumb.jpg" alt="an app illustration">
-	</a>  
-
-	<a id="" class="items show" href="OT-app.html">
-		<h3>OpenTable Motion Ads</h3> <img src="img/thumb-ot-app.jpg" alt="an advertisment showing the logo and product design of OpenTable">
-	</a>
-	
-	<a id="" class="items show" href="3d-letters.html">
-		<h3>3D Letters</h3> <img src="img/3D-f.webp" alt="a 3D rendering of the letter D">
-	</a>
-
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for project in sorted_projects %}
+    <a class="items show" href="{{ project.url | relative_url }}">
+      <h3>{{ project.title }}</h3>
+      <img src="{{ project.thumbnail | default: project.cover_image | relative_url }}" alt="{{ project.thumbnail_alt | default: project.title }}">
+    </a>
+  {% endfor %}
 </section>
-
-
-<footer>
-	<section class="footer-content">
-		<div class="email-list">
-			<h6>Subscribe to my zine</h6>
-			<p>Digital musings, direct to your inbox.</p>
-			<form
-				action="https://buttondown.email/api/emails/embed-subscribe/lanyard"
-				method="post"
-				target="popupwindow"
-				onsubmit="window.open('https://buttondown.email/lanyard', 'popupwindow')"
-				class="embeddable-buttondown-form"
-			>
-				<input type="email" name="email" id="bd-email" placeholder="Your email address" required>
-				<input type="hidden" value="1" name="embed"></input>
-				<input type="submit" value="Subscribe" class="button"></input>
-			</form>
-		</div>
-		<div class="rule"></div>
-		<div class="ext-links">
-			<ul class="footer-nav">
-				<!-- <li><a href="/">Work</a></li> -->
-				<li><a href="colophon.html">Colophon</a></li> 
-				<li><a href="resources.html">Resources</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<div class="rule"></div>
-			<div class="social">
-			<a href="https://dribbble.com/peterlundblad" target="_blank">
-				<img src="img/icon-dribbble.svg">
-			</a>
-			<a href="https://www.instagram.com/pcl.design/" target="_blank">
-				<img src="img/icon-instagram.svg">
-			</a>
-			<a href="https://www.linkedin.com/in/peterlundblad/" target="_blank">
-				<img src="img/icon-linkedin.svg">
-			</a>
-			<a href="https://github.com/peterlundblad/" target="_blank">
-				<img src="img/icon-github1.svg">
-				</a>
-			</div>
-		</div>
-	</section>
-	<p id="copyright">
-		<script>
-			const currentYear = new Date().getFullYear();
-			document.getElementById("copyright").textContent = `© ${currentYear}`;
-		</script>
-		PCL. All Rights Reserved. <span>Made in SF, CA.</span>
-	</p>
-	</footer>
-</body>
-</html>

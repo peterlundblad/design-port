@@ -1,175 +1,58 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="generator" content="PCL">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Resources</title>
-		<link rel="stylesheet" href="css/_fonts.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500&display=swap" rel="stylesheet">
-		<script src="https://gumroad.com/js/gumroad.js"></script>
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-11R191B8ZM"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+---
+layout: default
+title: "Resources"
+---
 
-			gtag('config', 'G-11R191B8ZM');
-		</script>
+<div class="gradient">
+  {% include nav.html %}
 
-	</head>
-<body>
-	<div class="gradient">
-		<header>
-			<a href="index.html">
-				<img class="logo" src="img/pcl-logo.svg">
-			</a>
-			<ul class="nav">
-				<li><a href="index.html">Work</a></li>
-				<li class="selected"><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</header>
+  <section class="hero">
+    <img src="{{ '/img/resources-hero.jpg' | relative_url }}" alt="Resources hero">
+    <div class="text">
+      <h2>Resources</h2>
+      <p>I’m always on the lookout for new tools and resources. Now, it’s my turn to give back. Who doesn’t love freebies!</p>
+    </div>
+    <section class="gallery-mid">
+      <a class="items show" href="https://gum.co/eMXpl" target="_blank" rel="noopener">
+        <h3>Asphalt Texture</h3>
+        <img src="{{ '/img/thumb-texture1.jpg' | relative_url }}" alt="Asphalt Texture">
+      </a>
+      <a class="items show" href="https://gum.co/EsVeP" target="_blank" rel="noopener">
+        <h3>Chipped Paint Texture</h3>
+        <img src="{{ '/img/thumb-texture2-paint-chip.jpg' | relative_url }}" alt="Chipped Paint Texture">
+      </a>
+      <a class="items show" href="https://gum.co/pJsFR" target="_blank" rel="noopener">
+        <h3>Halftone Gradient Texture</h3>
+        <img src="{{ '/img/thumb-paper-HT.jpg' | relative_url }}" alt="Halftone Gradient Texture">
+      </a>
+      <a class="items show" href="https://gum.co/rCUuf" target="_blank" rel="noopener">
+        <h3>Grit Specks Texture</h3>
+        <img src="{{ '/img/thumb-texture-grit.jpg' | relative_url }}" alt="Grit Specks Texture">
+      </a>
+    </section>  
+  </section>
+</div>
 
-		<section class="hero">
-			<img src="img/resources-hero.jpg">
-			<div class="text">
-				<h2>Resources</h2>
-				<p>I’m always on the lookout for new tools and resources. Now, it’s my turn to give back. Who doesn’t love freebies!</p>
-			</div>
-			<section class="gallery-mid">
-				<a class="items show" href="https://gum.co/eMXpl">
-					<h3>Asphalt Texture</h3>
-					<img src="img/thumb-texture1.jpg"></a>
-				<a class="items show" href="https://gum.co/EsVeP">
-					<h3>Chipped Paint Texture</h3>
-					<img src="img/thumb-texture2-paint-chip.jpg"></a>
-				<a class="items show" href="https://gum.co/pJsFR">
-					<h3>Halftone Gradient Texture</h3>
-					<img src="img/thumb-paper-HT.jpg"></a>
-				<a class="items show" href="https://gum.co/rCUuf">
-					<h3>Grit Specks Texture</h3>
-					<img src="img/thumb-texture-grit.jpg"></a>
-			</section>	
-		
-	</div>
-	<section class="cta cta2">
-		<div class="group2">
-			<div class="dot1"></div>
-			<div class="dot2"></div>
-			<div class="dot3"></div>
-			<div class="dot4"></div>
-			<div class="dot5"></div>
-		</div>
-		<div class="cta-text">
-			<h6>Interested in hearing more?</h6>
-			<a class="button" href="mailto:contact@peterlundblad.com?subject=your portfolio">Email me</a>
-		</div>
-	</section>
-	<section class="grid">
+<section class="cta cta2">
+  <div class="group2">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+    <div class="dot4"></div>
+    <div class="dot5"></div>
+  </div>
+  <div class="cta-text">
+    <h6>Interested in hearing more?</h6>
+    <a class="button" href="mailto:{{ site.email }}?subject=your%20portfolio">Email me</a>
+  </div>
+</section>
 
-		<a id="" class="items show" href="coachbar.html">
-			<h3>Coachbar</h3> <img src="img/thumbnail-coachbar-brand.jpg" alt="a blue and green wavy background with white logo on top">
-		</a>
-	
-		<a id="" class="items show" href="banana.html">
-			<h3>Banana Republic</h3> <img src="img/BR_thumb.webp" alt="a man in a light blue suit">
-		</a>
-	
-		<a id="" class="items show" href="c-explore.html">
-			<h3>Letter C Explore</h3> <img src="img/Letter-C-thumb.webp" alt="a step and repeat of a colorful logo">
-		</a>
-	
-		<a id="" class="items show" href="cin7.html">
-			<h3>Cin7</h3> <img src="img/cin7-story-thumb.jpg" alt="a close up of a column of a user interface">
-		</a>
-	
-		<a id="" class="items show" href="aldino.html">
-			<h3>Aldino Typeface</h3> <img src="img/thumb-aldino.png" alt="a slab serif typographic headline set in white">
-		</a>
-	
-		<a id="" class="items show" href	="dorm.html">
-			<h3>Pottery Barn Emails</h3> <img src="img/thumb-dorm.jpg" alt="trendy pastel bedding in a dorm room">
-		</a>
-	
-		<a id="" class="items show" href="corpen.html">
-			<h3>Corpen Rebrand</h3> <img src="img/thumb-corpen.jpg" alt="a minimalist white logo set on a teal and orange gradient">
-		</a>
-	
-		<a id="" class="items show" href="harrypotter.html">
-			<h3>Harry Potter</h3> <img src="img/hp-thumb.jpg" alt="a supernova exploding behind the Harry Potter logo symbolizing a patronus charm">
-		</a>
-	
-		<a id="" class="items show" href="combinati.html">
-			<h3>Combinati Site Design</h3> <img src="img/combinati-thumb.jpg" alt="two purple icons for the biotech company Combinati">
-		</a>
-	
-		<a id="" class="items show" href="ApparelMagic.html">
-			<h3>ApparelMagic</h3> <img src="img/AM_img0-thumb.jpg" alt="an app illustration">
-		</a>  
-	
-		<a id="" class="items show" href="OT-app.html">
-			<h3>OpenTable Motion Ads</h3> <img src="img/thumb-ot-app.jpg" alt="an advertisment showing the logo and product design of OpenTable">
-		</a>
-		
-		<a id="" class="items show" href="3d-letters.html">
-			<h3>3D Letters</h3> <img src="img/3D-f.webp" alt="a 3D rendering of the letter D">
-		</a>
-	
-	</section>
-
-
-<footer>
-	<section class="footer-content">
-		<div class="email-list">
-			<h6>Subscribe to my zine</h6>
-			<p>Digital musings, direct to your inbox.</p>
-			<form
-				action="https://buttondown.email/api/emails/embed-subscribe/lanyard"
-				method="post"
-				target="popupwindow"
-				onsubmit="window.open('https://buttondown.email/lanyard', 'popupwindow')"
-				class="embeddable-buttondown-form"
-			>
-				<input type="email" name="email" id="bd-email" placeholder="Your email address" required>
-				<input type="hidden" value="1" name="embed"></input>
-				<input type="submit" value="Subscribe" class="button"></input>
-			</form>
-		</div>
-		<div class="rule"></div>
-		<div class="ext-links">
-			<ul class="footer-nav">
-				<!-- <li><a href="/">Work</a></li> -->
-				<li><a href="colophon.html">Colophon</a></li> 
-				<li><a href="resources.html">Resources</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<div class="rule"></div>
-			<div class="social">
-			<a href="https://dribbble.com/peterlundblad" target="_blank">
-				<img src="img/icon-dribbble.svg">
-			</a>
-			<a href="https://www.instagram.com/pcl.design/" target="_blank">
-				<img src="img/icon-instagram.svg">
-			</a>
-			<a href="https://www.linkedin.com/in/peterlundblad/" target="_blank">
-				<img src="img/icon-linkedin.svg">
-			</a>
-			<a href="https://github.com/peterlundblad/" target="_blank">
-				<img src="img/icon-github1.svg">
-				</a>
-			</div>
-		</div>
-	</section>
-	<p id="copyright">© <script type="text/javascript">
-		document.write(new Date().getFullYear());
-	  </script> PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
-	</footer>
-</body>
-</html>
+<section class="grid">
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for project in sorted_projects %}
+    <a class="items show" href="{{ project.url | relative_url }}">
+      <h3>{{ project.title }}</h3>
+      <img src="{{ project.thumbnail | default: project.cover_image | relative_url }}" alt="{{ project.thumbnail_alt | default: project.title }}">
+    </a>
+  {% endfor %}
+</section>

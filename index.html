@@ -1,277 +1,100 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="keywords" content="design, visual, graphic, front-end, designer, art, motion, illustration">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Peter Lundblad">
-		<meta name="description" content="The brand design portfolio of Peter Lundblad">
+---
+layout: default
+title: "Peter's Brand Design Portfolio"
+nav: work
+---
 
-		<meta property="og:title" content="The Design Portfolio of PCL" />
-		<meta property="og:image" content="img/pcl-site-screenshot.jpg" />
-		<meta property="og:description" content="The brand design portfolio of PCL" />
-		<meta property="og:url" content="https://pcl.design/" />
-		
-		<title>Peter's Brand Design Portfolio</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500&display=swap" rel="stylesheet">
-		
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-11R191B8ZM"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<div class="gradient">
+  {% include nav.html %}
 
-		gtag('config', 'G-11R191B8ZM');
-	</script>
-
-	</head>
-	<body>
-		<div class="gradient">
-		<header>
-			<a href="#">
-				<img class="logo" src="img/pcl-logo.svg" alt="a teal circular logo with the letters PCL">
-			  </a>
-		<ul class="nav">
-		  <li class="selected"><a href="index.html">Work</a></li>
-		  <li><a href="about.html">About</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-		</ul>
-		</header>
-		<section class="index-hero">
-			<div class="circ-art">
-				<div class="circle1"></div>
-				<div class="circle2"></div>
-				<div class="circle3"></div>
-				<div class="circle4"></div>
-				<div class="circle5"></div>
-			</div>
-			<h1>Peter is an <span class="highlight">art director</span>, specializing in brand and type design.
-			  </h1> 
-			<h4 class="bold">He is based in France and available worldwide for freelance projects.</h4>
-		</section>
+  <section class="index-hero">
+    <div class="circ-art">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+    </div>
+    <h1>Peter is an <span class="highlight">art director</span>, specializing in brand and type design.</h1> 
+    <h4 class="bold">He is based in France and available worldwide for freelance projects.</h4>
+  </section>
 </div>
 
 <section id="myBtnContainer">
-	<button class="btn active" onclick="filterSelection('Featured')">Featured</button>
-	<button class="btn" onclick="filterSelection('brand')">Brand Marketing</button>
-	<!-- <button class="btn" onclick="filterSelection('web')">Web</button> -->
-	<button class="btn" onclick="filterSelection('email')">Email</button>
-	<button class="btn" onclick="filterSelection('motion')">Motion</button>
-	<button class="btn" onclick="filterSelection('type')">Type</button>
-	<button class="btn" onclick="filterSelection('print')">Print</button>
+  <button class="btn active" onclick="filterSelection('Featured')">Featured</button>
+  <button class="btn" onclick="filterSelection('brand')">Brand Marketing</button>
+  <button class="btn" onclick="filterSelection('email')">Email</button>
+  <button class="btn" onclick="filterSelection('motion')">Motion</button>
+  <button class="btn" onclick="filterSelection('type')">Type</button>
+  <button class="btn" onclick="filterSelection('print')">Print</button>
 </section>
 
 <section class="grid">
-
-	<a id="" class="Featured items brand print" href="coachbar.html">
-		<h3>Coachbar</h3> <img src="img/thumbnail-coachbar-brand.jpg" alt="a blue and green wavy background with white logo on top">
-	</a>
-
-	<a id="" class="Featured items brand email" href="banana.html">
-		<h3>Banana Republic</h3> <img src="img/BR_thumb.webp" alt="a man in a light blue suit">
-	</a>
-
-	<a id="" class="Featured items type brand" href="c-explore.html">
-		<h3>Letter C Explore</h3> <img src="img/Letter-C-thumb.webp" alt="a step and repeat of a colorful logo">
-	</a>
-
-	<a id="" class="Featured items motion brand" href="cin7.html">
-		<h3>Cin7</h3> <img src="img/cin7-story-thumb.jpg" alt="a close up of a column of a user interface">
-	</a>
-
-	<a id="" class="Featured items type" href="aldino.html">
-		<h3>Aldino Typeface</h3> <img src="img/thumb-aldino.png" alt="a slab serif typographic headline set in white">
-	</a>
-
-	<a id="" class="Featured items brand email" href	="dorm.html">
-		<h3>Pottery Barn Emails</h3> <img src="img/thumb-dorm.jpg" alt="trendy pastel bedding in a dorm room">
-	</a>
-
-	<a id="" class="Featured items brand print" href="corpen.html">
-		<h3>Corpen Rebrand</h3> <img src="img/thumb-corpen.jpg" alt="a minimalist white logo set on a teal and orange gradient">
-	</a>
-
-	<a id="" class="items brand email" href="niaw.html">
-		<h3>NIAW Campaign</h3> <img src="img/thumb-niaw.jpg" alt="a digital collage showing a headline and pictures of people">
-	</a>
-
-	<a id="" class="Featured items email" href="harrypotter.html">
-		<h3>Harry Potter</h3> <img src="img/hp-thumb.jpg" alt="a supernova exploding behind the Harry Potter logo symbolizing a patronus charm">
-	</a>
-
-	<a id="" class="Featured items brand" href="combinati.html">
-		<h3>Combinati Site Design</h3> <img src="img/combinati-thumb.jpg" alt="two purple icons for the biotech company Combinati">
-	</a>
-
-	<a id="" class="items motion" href="OT-pizza.html">
-		<h3>OpenTable Pizza Story</h3> <img src="img/thumb-ot-pizza.jpg" alt="an illustration of pizza">
-	</a>
-
-	<a id="" class="Featured items show" href="ApparelMagic.html">
-		<h3>ApparelMagic</h3> <img src="img/AM_img0-thumb.jpg" alt="an app illustration">
-	</a>  
-
-	<a id="" class="items type print" href="wedding-invites.html">
-		<h3>Wedding Invites</h3> <img src="img/wedding-thumb.jpg" alt="cursive monoline script that reads Peter and Hope">
-	</a>
-
-	<a id="" class="Featured items motion" href="OT-app.html">
-		<h3>OpenTable Motion Ads</h3> <img src="img/thumb-ot-app.jpg" alt="an advertisment showing the logo and product design of OpenTable">
-	</a>
-	
-	<a id="" class="items print" href="cstl-ppl.html">
-		<h3>Castlight Testimonial</h3> <img src="img/thumb-testimonial400x300.jpg">
-	</a>
-
-	<a id="" class="items motion" href="abst.html">
-		<h3>Abstract GIFs</h3> <img src="img/thumb-shapes2_400x300.jpg">
-	</a>
-
-	<a id="" class="Featured items type motion" href="3d-letters.html">
-		<h3>3D Letters</h3> <img src="img/3D-f.webp" alt="a 3D rendering of the letter D">
-	</a>
-
-	
-	
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for project in sorted_projects %}
+    <a class="items {% for cat in project.categories %}{{ cat }} {% endfor %}" href="{{ project.url | relative_url }}">
+      <h3>{{ project.title }}</h3>
+      <img src="{{ project.thumbnail | default: project.cover_image | relative_url }}" alt="{{ project.thumbnail_alt | default: project.title }}">
+    </a>
+  {% endfor %}
 </section>
 
 <section class="brands">
-	<h6>Brands I've partnered with</h6>
-	<div class="brandLogos">
-		<img id=""src="img/brand-logos-pb.png" alt="logo for Pottery Barn">
-		<img id="logoAdjustH" src="img/brand-logos-Warner_Bros_Shield.png" alt="logo for Warner Bros.">
-		<img id="logoAdjustH" src="img/brand-logos-CBR.png" alt="logo for CBR">
-		<img id="logoAdjustW" src="img/BR_Logo_white.png" alt="logo for Banana Republic">
-		<img id="" src="img/brand-logos-opentable-logo-white.png" alt="logo for OpenTable">
-		<img id="" src="img/brand-logos-cin7-white.png" alt="logo for Cin7">
-	</div>
-		
+  <h6>Brands I've partnered with</h6>
+  <div class="brandLogos">
+    <img src="{{ '/img/brand-logos-pb.png' | relative_url }}" alt="logo for Pottery Barn">
+    <img id="logoAdjustH" src="{{ '/img/brand-logos-Warner_Bros_Shield.png' | relative_url }}" alt="logo for Warner Bros.">
+    <img id="logoAdjustH" src="{{ '/img/brand-logos-CBR.png' | relative_url }}" alt="logo for CBR">
+    <img id="logoAdjustW" src="{{ '/img/BR_Logo_white.png' | relative_url }}" alt="logo for Banana Republic">
+    <img src="{{ '/img/brand-logos-opentable-logo-white.png' | relative_url }}" alt="logo for OpenTable">
+    <img src="{{ '/img/brand-logos-cin7-white.png' | relative_url }}" alt="logo for Cin7">
+  </div>
 </section>
 
+<script>
+  filterSelection("Featured");
 
-	<footer>
-		<section class="footer-content">
-			<div class="email-list">
-				<h6>Subscribe to my zine</h6>
-				<p>Digital musings, direct to your inbox.</p>
-				<form
-					action="https://buttondown.email/api/emails/embed-subscribe/lanyard"
-					method="post"
-					target="popupwindow"
-					onsubmit="window.open('https://buttondown.email/lanyard', 'popupwindow')"
-					class="embeddable-buttondown-form"
-				>
-					<input type="email" name="email" id="bd-email" placeholder="Your email address" required>
-					<input type="hidden" value="1" name="embed"></input>
-					<input type="submit" value="Subscribe" class="button"></input>
-				</form>
-			</div>
-			<div class="rule"></div>
-			<div class="ext-links">
-				<ul class="footer-nav">
-					<!-- <li><a href="/">Work</a></li> -->
-					<li><a href="colophon.html">Colophon</a></li> 
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<div class="rule"></div>
-				<div class="social">
-				<a href="https://dribbble.com/peterlundblad" target="_blank">
-					<img src="img/icon-dribbble.svg" alt="logo for Dribbble.com">
-				</a>
-				<a href="https://www.instagram.com/pcl.design/" target="_blank">
-					<img src="img/icon-instagram.svg" alt="logo for Instagram">
-				</a>
-				<a href="https://www.linkedin.com/in/peterlundblad/" target="_blank">
-					<img src="img/icon-linkedin.svg" alt="logo for Linkedin">
-				</a>
-				<a href="https://github.com/peterlundblad/" target="_blank">
-					<img src="img/icon-github1.svg" alt="logo for GitHub">
-					</a>
-				</div>
-			</div>
-		</section>
-			<p id="copyright">
-				<script>
-					const currentYear = new Date().getFullYear();
-					document.getElementById("copyright").textContent = `© ${currentYear}`;
-				</script>
-				PCL. All Rights Reserved. <span>Made in SF, CA.</span>
-			</p>
-		</footer>
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("items");
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
 
-		<script>
-			// Call filterSelection with "Featured" as the default category
-			filterSelection("Featured")
-		  
-			// Function to filter items based on category
-			function filterSelection(c) {
-			  var x, i;
-			  // Get all elements with the class "items"
-			  x = document.getElementsByClassName("items");
-			  // Clear 'c' if "Featured" is selected to show only those items
-			  if (c == "Featured") c = "Featured";  // Default category now is "Featured"
-			  // Loop through all items to show or hide them
-			  for (i = 0; i < x.length; i++) {
-				// Remove "show" class from each item to hide it initially
-				w3RemoveClass(x[i], "show");
-				// Only add "show" if the item’s class includes the selected category
-				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-			  }
-			}
-		  
-			// Function to add one or more classes to an element
-			function w3AddClass(element, name) {
-			  var i, arr1, arr2;
-			  // Split existing classes into an array
-			  arr1 = element.className.split(" ");
-			  // Split new class names into an array
-			  arr2 = name.split(" ");
-			  // Loop through each class in arr2
-			  for (i = 0; i < arr2.length; i++) {
-				// If the element does not have this class, add it
-				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-			  }
-			}
-		  
-			// Function to remove one or more classes from an element
-			function w3RemoveClass(element, name) {
-			  var i, arr1, arr2;
-			  // Split existing classes into an array
-			  arr1 = element.className.split(" ");
-			  // Split class names to remove into an array
-			  arr2 = name.split(" ");
-			  // Loop through each class in arr2
-			  for (i = 0; i < arr2.length; i++) {
-				// While the class exists in arr1, remove it
-				while (arr1.indexOf(arr2[i]) > -1) {
-				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
-				}
-			  }
-			  // Join the remaining classes back together and assign to className
-			  element.className = arr1.join(" ");
-			}
-		  
-			// Adding "active" class to the current button when clicked
-			var btnContainer = document.getElementById("myBtnContainer");
-			var btns = btnContainer.getElementsByClassName("btn");
-			for (var i = 0; i < btns.length; i++) {
-			  // Add a click event listener to each button
-			  btns[i].addEventListener("click", function(){
-				// Remove "active" class from the current active button
-				var current = document.getElementsByClassName("active");
-				current[0].className = current[0].className.replace(" active", "");
-				// Add "active" class to the clicked button
-				this.className += " active";
-			  });
-			}
-		  </script>
-			
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
 
-	</body>
-</html>
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  var btnContainer = document.getElementById("myBtnContainer");
+  if (btnContainer) {
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+      });
+    }
+  }
+</script>

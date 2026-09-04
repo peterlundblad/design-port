@@ -1,0 +1,44 @@
+<footer>
+  <section class="footer-content">
+    <div class="email-list">
+      <h6>Subscribe to my zine</h6>
+      <p>Digital musings, direct to your inbox.</p>
+      <form
+        action="https://buttondown.email/api/emails/embed-subscribe/lanyard"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/lanyard', 'popupwindow')"
+        class="embeddable-buttondown-form"
+      >
+        <input type="email" name="email" id="bd-email" placeholder="Your email address" required>
+        <input type="hidden" value="1" name="embed">
+        <input type="submit" value="Subscribe" class="button">
+      </form>
+    </div>
+    <div class="rule"></div>
+    <div class="ext-links">
+      <ul class="footer-nav">
+        <li><a href="{{ '/colophon.html' | relative_url }}">Colophon</a></li> 
+        <li><a href="{{ '/resources.html' | relative_url }}">Resources</a></li>
+        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+      </ul>
+      <div class="rule"></div>
+      <div class="social">
+        <a href="https://dribbble.com/peterlundblad" target="_blank" rel="noopener">
+          <img src="{{ '/img/icon-dribbble.svg' | relative_url }}" alt="Dribbble">
+        </a>
+        <a href="https://www.instagram.com/pcl.design/" target="_blank" rel="noopener">
+          <img src="{{ '/img/icon-instagram.svg' | relative_url }}" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/peterlundblad/" target="_blank" rel="noopener">
+          <img src="{{ '/img/icon-linkedin.svg' | relative_url }}" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/peterlundblad/" target="_blank" rel="noopener">
+          <img src="{{ '/img/icon-github1.svg' | relative_url }}" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </section>
+  <p id="copyright">© {{ 'now' | date: "%Y" }} PCL. All Rights Reserved. <span>Made in SF, CA.</span></p>
+</footer>

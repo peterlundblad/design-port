@@ -1,0 +1,10 @@
+<header>
+  <a href="{{ '/' | relative_url }}">
+    <img class="logo" src="{{ '/img/pcl-logo.svg' | relative_url }}" alt="a teal circular logo with the letters PCL">
+  </a>
+  <ul class="nav">
+    <li class="{% if page.layout == 'project' or page.nav == 'work' or page.url == '/' %}selected{% endif %}"><a href="{{ '/' | relative_url }}">Work</a></li>
+    <li class="{% if page.nav == 'about' or page.url contains 'about' %}selected{% endif %}"><a href="{{ '/about.html' | relative_url }}">About</a></li>
+    <li class="{% if page.nav == 'contact' or page.url contains 'contact' %}selected{% endif %}"><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+  </ul>
+</header>

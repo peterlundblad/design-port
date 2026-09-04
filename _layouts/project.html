@@ -1,0 +1,142 @@
+---
+layout: default
+---
+
+<div class="gradient">
+  {% include nav.html %}
+
+  <!-- HERO & METADATA SECTION -->
+  <section class="hero">
+    {% if page.cover_image %}
+      <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+    {% endif %}
+
+    <div class="text">
+      <h2>{{ page.title }}{% if page.subtitle %} &mdash; {{ page.subtitle }}{% endif %}</h2>
+
+      {% if page.client %}<p><span class="bold">Client:</span> {{ page.client }}</p>{% endif %}
+      {% if page.brief %}<p><span class="bold">Creative Brief:</span> {{ page.brief }}</p>{% endif %}
+      {% if page.overview %}<p><span class="bold">Project Overview:</span> {{ page.overview }}</p>{% endif %}
+      {% if page.role %}<p><span class="bold">Role:</span> {{ page.role }}</p>{% endif %}
+      {% if page.year %}<p><span class="bold">Year:</span> {{ page.year }}</p>{% endif %}
+      {% if page.external_url %}<p><span class="bold">Link:</span> <a href="{{ page.external_url }}" target="_blank" rel="noopener">{{ page.external_label | default: "Visit Site" }}</a></p>{% endif %}
+      {% if page.process %}<p><span class="bold">Process:</span> {{ page.process }}</p>{% endif %}
+
+      {% if page.process_list %}
+        <ol class="process-list">
+          {% for step in page.process_list %}
+            <li><span class="bold">{{ step.label }}:</span> {{ step.text }}</li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if page.results %}<p><span class="bold">Results:</span> {{ page.results }}</p>{% endif %}
+      {% if page.intro %}<p>{{ page.intro }}</p>{% endif %}
+    </div>
+  </section>
+
+  {% if page.sections %}
+    <!-- ORDERED SECTIONS (INTERLEAVED GALLERIES & FULLBLEED) -->
+    {% for sec in page.sections %}
+      {% if sec.type == "gallery" %}
+        {% if sec.gradient2 %}<div class="gradient2">{% endif %}
+        <section class="gallery-mid3{% if sec.class %} {{ sec.class }}{% endif %}">
+          {% for card in sec.cards %}
+            <div class="cards">
+              <h3 class="bold">{{ card.title }}</h3>
+              <p>{{ card.text }}</p>
+            </div>
+          {% endfor %}
+          {% for item in sec.items %}
+            <div class="imgCapt{% if item.big %} big{% endif %}">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: page.title }}">
+              {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+            </div>
+          {% endfor %}
+        </section>
+        {% if sec.gradient2 %}</div>{% endif %}
+      {% elsif sec.type == "fullbleed" %}
+        <section class="fullbleed{% if sec.class %} {{ sec.class }}{% endif %}">
+          {% for item in sec.items %}
+            <div class="imgCapt">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: page.title }}">
+              {% if item.caption %}<figcaption class="figWhite">{{ item.caption }}</figcaption>{% endif %}
+            </div>
+          {% endfor %}
+        </section>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <!-- REUSABLE CARDS & MID-GALLERY -->
+    {% if page.cards or page.gallery %}
+      <section class="gallery-mid3">
+        {% for card in page.cards %}
+          <div class="cards">
+            <h3 class="bold">{{ card.title }}</h3>
+            <p>{{ card.text }}</p>
+          </div>
+        {% endfor %}
+
+        {% for item in page.gallery %}
+          <div class="imgCapt{% if item.big %} big{% endif %}">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: page.title }}">
+            {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+          </div>
+        {% endfor %}
+      </section>
+    {% endif %}
+
+    <!-- FULLBLEED SHOWCASE ASSETS -->
+    {% if page.fullbleed %}
+      <section class="fullbleed">
+        {% for item in page.fullbleed %}
+          <div class="imgCapt">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: page.title }}">
+            {% if item.caption %}<figcaption class="figWhite">{{ item.caption }}</figcaption>{% endif %}
+          </div>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endif %}
+
+  <!-- VIDEO EMBED -->
+  {% if page.video_id %}
+    <section class="fullbleedVideo">
+      <div class="DeskVideo">
+        <iframe class="iframes" src="https://player.vimeo.com/video/{{ page.video_id }}?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="{{ page.title }}"></iframe>
+      </div>
+      <iframe class="mobile" src="https://player.vimeo.com/video/{{ page.video_id }}?title=0&byline=0&portrait=0" width="533" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </section>
+  {% endif %}
+
+  <!-- BESPOKE MARKDOWN/HTML CONTENT -->
+  {{ content }}
+</div>
+
+<!-- CTA SECTION -->
+<section class="cta">
+  <div class="group2">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+    <div class="dot4"></div>
+    <div class="dot5"></div>
+  </div>
+  <div class="cta-text">
+    <h6>Interested in hearing more?</h6>
+    <a class="button" href="mailto:{{ site.email | default: 'contact@peterlundblad.com' }}?subject=your%20portfolio">Email me</a>
+  </div>
+</section>
+
+<!-- DYNAMIC BOTTOM PORTFOLIO GRID -->
+<section class="grid">
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for project in sorted_projects %}
+    {% unless project.url == page.url %}
+      <a class="items show" href="{{ project.url | relative_url }}">
+        <h3>{{ project.title }}</h3>
+        <img src="{{ project.thumbnail | default: project.cover_image | relative_url }}" alt="{{ project.thumbnail_alt | default: project.title }}">
+      </a>
+    {% endunless %}
+  {% endfor %}
+</section>
